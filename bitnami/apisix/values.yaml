@@ -1064,7 +1064,7 @@ controlPlane:
   ##
   existingConfigMap: ""
 
-  ## @param controlPlane.extraConfigExistingConfigMap name of a ConfigMap with existing configuration for the conrol plane
+  ## @param controlPlane.extraConfigExistingConfigMap name of a ConfigMap with existing configuration for the control plane
   ##
   extraConfigExistingConfigMap: ""
 

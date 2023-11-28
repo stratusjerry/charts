@@ -1320,7 +1320,7 @@
                 },
                 "extraConfigExistingConfigMap": {
                     "type": "string",
-                    "description": "name of a ConfigMap with existing configuration for the conrol plane",
+                    "description": "name of a ConfigMap with existing configuration for the control plane",
                     "default": ""
                 },
                 "tls": {
