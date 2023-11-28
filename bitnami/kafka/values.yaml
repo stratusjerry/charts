@@ -115,7 +115,7 @@ extraConfig: ""
 ## This value will be stored in a secret.
 ##
 secretConfig: ""
-## @param existingSecretConfig Secret with additonal configuration that will be appended to the end of the generated Kafka configuration file
+## @param existingSecretConfig Secret with additional configuration that will be appended to the end of the generated Kafka configuration file
 ## The key for the configuration should be: server-secret.properties
 ## NOTE: This will override secretConfig value
 ##
@@ -475,7 +475,7 @@ controller:
   controllerOnly: false
   ## @param controller.minId Minimal node.id values for controller-eligible nodes. Do not change after first initialization.
   ## Broker-only id increment their ID starting at this minimal value.
-  ## We recommend setting this this value high enough, as IDs under this value will be used by controller-elegible nodes
+  ## We recommend setting this this value high enough, as IDs under this value will be used by controller-eligible nodes
   ##
   minId: 0
   ## @param controller.zookeeperMigrationMode Set to true to deploy cluster controller quorum
@@ -497,7 +497,7 @@ controller:
   ## This value will be stored in a secret.
   ##
   secretConfig: ""
-  ## @param controller.existingSecretConfig Secret with additonal configuration that will be appended to the end of the generated Kafka controller-eligible nodes configuration file
+  ## @param controller.existingSecretConfig Secret with additional configuration that will be appended to the end of the generated Kafka controller-eligible nodes configuration file
   ## The key for the configuration should be: server-secret.properties
   ## NOTE: This will override controller.secretConfig value
   ##
@@ -897,7 +897,7 @@ broker:
   ## This value will be stored in a secret.
   ##
   secretConfig: ""
-  ## @param broker.existingSecretConfig Secret with additonal configuration that will be appended to the end of the generated Kafka broker-only nodes configuration file
+  ## @param broker.existingSecretConfig Secret with additional configuration that will be appended to the end of the generated Kafka broker-only nodes configuration file
   ## The key for the configuration should be: server-secret.properties
   ## NOTE: This will override broker.secretConfig value
   ##
@@ -2503,7 +2503,7 @@ kraft:
   ## In case the cluster ID stored in the secret does not match the value stored in /bitnami/kafka/data/meta.properties, remove the secret and upgrade the chart setting the correct value.
   ##
   clusterId: ""
-  ## @param kraft.controllerQuorumVoters Override the Kafka controller quorum voters of the Kafka Kraft cluster. If not set, it will be automatically configured to use all controller-elegible nodes.
+  ## @param kraft.controllerQuorumVoters Override the Kafka controller quorum voters of the Kafka Kraft cluster. If not set, it will be automatically configured to use all controller-eligible nodes.
   ##
   controllerQuorumVoters: ""
 

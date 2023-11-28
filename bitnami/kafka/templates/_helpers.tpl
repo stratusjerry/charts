@@ -26,8 +26,8 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- end -}}
 
 {{/*
- Create the name of the service account to use
- */}}
+Create the name of the service account to use
+*/}}
 {{- define "kafka.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create -}}
     {{ default (include "common.names.fullname" .) .Values.serviceAccount.name }}
@@ -87,8 +87,8 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- end -}}
 
 {{/*
- Create the name of the service account to use for Kafka exporter pods
- */}}
+Create the name of the service account to use for Kafka exporter pods
+*/}}
 {{- define "kafka.metrics.kafka.serviceAccountName" -}}
 {{- if .Values.metrics.kafka.serviceAccount.create -}}
     {{ default (include "kafka.metrics.kafka.fullname" .) .Values.metrics.kafka.serviceAccount.name }}
@@ -334,7 +334,7 @@ Return the Kafka controller-eligible secret configuration
 {{- end -}}
 
 {{/*
-Return the Kafka controller-eligible secret configuration values 
+Return the Kafka controller-eligible secret configuration values
 */}}
 {{- define "kafka.controller.secretConfig" -}}
 {{- if .Values.secretConfig }}
@@ -398,7 +398,7 @@ Return the Kafka broker secret configuration
 {{- end -}}
 
 {{/*
-Return the Kafka broker secret configuration values 
+Return the Kafka broker secret configuration values
 */}}
 {{- define "kafka.broker.secretConfig" -}}
 {{- if .Values.secretConfig }}
@@ -742,8 +742,8 @@ Init container definition for Kafka initialization
   securityContext: {{- omit $roleSettings.containerSecurityContext "enabled" | toYaml | nindent 4 }}
   {{- end }}
   {{- if $roleSettings.initContainerResources }}
-  resources: {{- toYaml $roleSettings.initContainerResources | nindent 4 }}  
-  {{- end }} 
+  resources: {{- toYaml $roleSettings.initContainerResources | nindent 4 }}
+  {{- end }}
   command:
     - /bin/bash
   args:

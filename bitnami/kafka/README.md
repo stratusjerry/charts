@@ -93,7 +93,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `existingConfigmap`                   | ConfigMap with Kafka Configuration                                                                                                                                                                         | `""`                    |
 | `extraConfig`                         | Additional configuration to be appended at the end of the generated Kafka configuration file.                                                                                                              | `""`                    |
 | `secretConfig`                        | Additional configuration to be appended at the end of the generated Kafka configuration file.                                                                                                              | `""`                    |
-| `existingSecretConfig`                | Secret with additonal configuration that will be appended to the end of the generated Kafka configuration file                                                                                             | `""`                    |
+| `existingSecretConfig`                | Secret with additional configuration that will be appended to the end of the generated Kafka configuration file                                                                                            | `""`                    |
 | `log4j`                               | An optional log4j.properties file to overwrite the default of the Kafka brokers                                                                                                                            | `""`                    |
 | `existingLog4jConfigMap`              | The name of an existing ConfigMap containing a log4j.properties file                                                                                                                                       | `""`                    |
 | `heapOpts`                            | Kafka Java Heap size                                                                                                                                                                                       | `-Xmx1024m -Xms1024m`   |
@@ -196,7 +196,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `controller.existingConfigmap`                                 | ConfigMap with Kafka Configuration for controller-eligible nodes.                                                                                                                             | `""`                      |
 | `controller.extraConfig`                                       | Additional configuration to be appended at the end of the generated Kafka controller-eligible nodes configuration file.                                                                       | `""`                      |
 | `controller.secretConfig`                                      | Additional configuration to be appended at the end of the generated Kafka controller-eligible nodes configuration file.                                                                       | `""`                      |
-| `controller.existingSecretConfig`                              | Secret with additonal configuration that will be appended to the end of the generated Kafka controller-eligible nodes configuration file                                                      | `""`                      |
+| `controller.existingSecretConfig`                              | Secret with additional configuration that will be appended to the end of the generated Kafka controller-eligible nodes configuration file                                                     | `""`                      |
 | `controller.heapOpts`                                          | Kafka Java Heap size for controller-eligible nodes                                                                                                                                            | `-Xmx1024m -Xms1024m`     |
 | `controller.command`                                           | Override Kafka container command                                                                                                                                                              | `[]`                      |
 | `controller.args`                                              | Override Kafka container arguments                                                                                                                                                            | `[]`                      |
@@ -302,7 +302,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `broker.existingConfigmap`                                 | ConfigMap with Kafka Configuration for broker-only nodes.                                                                                                                                     | `""`                      |
 | `broker.extraConfig`                                       | Additional configuration to be appended at the end of the generated Kafka broker-only nodes configuration file.                                                                               | `""`                      |
 | `broker.secretConfig`                                      | Additional configuration to be appended at the end of the generated Kafka broker-only nodes configuration file.                                                                               | `""`                      |
-| `broker.existingSecretConfig`                              | Secret with additonal configuration that will be appended to the end of the generated Kafka broker-only nodes configuration file                                                              | `""`                      |
+| `broker.existingSecretConfig`                              | Secret with additional configuration that will be appended to the end of the generated Kafka broker-only nodes configuration file                                                             | `""`                      |
 | `broker.heapOpts`                                          | Kafka Java Heap size for broker-only nodes                                                                                                                                                    | `-Xmx1024m -Xms1024m`     |
 | `broker.command`                                           | Override Kafka container command                                                                                                                                                              | `[]`                      |
 | `broker.args`                                              | Override Kafka container arguments                                                                                                                                                            | `[]`                      |
@@ -693,7 +693,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `kraft.enabled`                 | Switch to enable or disable the KRaft mode for Kafka                                                                                                                                   | `true` |
 | `kraft.existingClusterIdSecret` | Name of the secret containing the cluster ID for the Kafka KRaft cluster. This is incompatible with the clusterId parameter. If both are set, the existingClusterIdSecret will be used | `""`   |
 | `kraft.clusterId`               | Kafka Kraft cluster ID. If not set, a random cluster ID will be generated the first time Kraft is initialized.                                                                         | `""`   |
-| `kraft.controllerQuorumVoters`  | Override the Kafka controller quorum voters of the Kafka Kraft cluster. If not set, it will be automatically configured to use all controller-elegible nodes.                          | `""`   |
+| `kraft.controllerQuorumVoters`  | Override the Kafka controller quorum voters of the Kafka Kraft cluster. If not set, it will be automatically configured to use all controller-eligible nodes.                          | `""`   |
 
 ### ZooKeeper chart parameters
 
@@ -1320,7 +1320,7 @@ This major updates Kafka to its newest version, 3.5.x. For more information, ple
 
 ### To 22.0.0
 
-This major updates the Kafka's configuration to use Kraft by default. You can learn more about this configuration [here](https://developer.confluent.io/learn/kraft). Apart from seting the `kraft.enabled` parameter to `true`, we also made the following changes:
+This major updates the Kafka's configuration to use Kraft by default. You can learn more about this configuration [here](https://developer.confluent.io/learn/kraft). Apart from setting the `kraft.enabled` parameter to `true`, we also made the following changes:
 
 - Renamed `minBrokerId` parameter to `minId` to set the minimum ID to use when configuring the node.id or broker.id parameter depending on the Kafka's configuration. This parameter sets the `KAFKA_CFG_NODE_ID` env var in the container.
 - Updated the `containerPorts` and `service.ports` parameters to include the new controller port.
@@ -1432,7 +1432,7 @@ The way to configure the users and passwords changed. Now it is allowed to creat
 
 ### To 11.0.0
 
-The way to configure listeners and athentication on Kafka is totally refactored allowing users to configure different authentication protocols on different listeners. Please check the [Listeners Configuration](#listeners-configuration) section for more information.
+The way to configure listeners and authentication on Kafka is totally refactored allowing users to configure different authentication protocols on different listeners. Please check the [Listeners Configuration](#listeners-configuration) section for more information.
 
 Backwards compatibility is not guaranteed you adapt your values.yaml to the new format. Here you can find some parameters that were renamed or disappeared in favor of new ones on this major version:
 
@@ -1440,7 +1440,7 @@ Backwards compatibility is not guaranteed you adapt your values.yaml to the new 
 - `auth.ssl` -> deprecated in favor of `auth.clientProtocol` and `auth.interBrokerProtocol` parameters.
 - `auth.certificatesSecret` -> renamed to `auth.jksSecret`.
 - `auth.certificatesPassword` -> renamed to `auth.jksPassword`.
-- `sslEndpointIdentificationAlgorithm` -> renamedo to `auth.tlsEndpointIdentificationAlgorithm`.
+- `sslEndpointIdentificationAlgorithm` -> renamed to `auth.tlsEndpointIdentificationAlgorithm`.
 - `auth.interBrokerUser` -> renamed to `auth.jaas.interBrokerUser`
 - `auth.interBrokerPassword` -> renamed to `auth.jaas.interBrokerPassword`
 - `auth.zookeeperUser` -> renamed to `auth.jaas.zookeeperUser`
