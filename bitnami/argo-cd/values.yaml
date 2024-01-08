@@ -384,7 +384,7 @@ controller:
     ## @param controller.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param controller.metrics.rules.selector Selector for the PrometheusRule object
     ## @param controller.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param controller.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param controller.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
@@ -529,7 +529,7 @@ controller:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param controller.lifecycleHooks for the Argo CD container(s) to automate configuration before or after startup
+  ## @param controller.lifecycleHooks LifecycleHooks for the Argo CD container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param controller.extraEnvVars Array with extra environment variables to add to Argo CD nodes
@@ -2375,7 +2375,7 @@ server:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param server.lifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup
+  ## @param server.lifecycleHooks LifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param server.extraEnvVars Array with extra environment variables to add to Argo CD server nodes
@@ -2834,7 +2834,7 @@ repoServer:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param repoServer.lifecycleHooks for the Argo CD repo server container(s) to automate configuration before or after startup
+  ## @param repoServer.lifecycleHooks LifecycleHooks for the Argo CD repo server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param repoServer.extraEnvVars Array with extra environment variables to add to Argo CD repo server nodes
@@ -3298,7 +3298,7 @@ dex:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param dex.lifecycleHooks for the Dex container(s) to automate configuration before or after startup
+  ## @param dex.lifecycleHooks LifecycleHooks for the Dex container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dex.extraEnvVars Array with extra environment variables to add to Dex nodes
@@ -3478,7 +3478,7 @@ config:
     argocdServerAdminPasswordMtime: ""
 
     ## Create a secret with optional repository credentials
-    ## @param config.secret.repositoryCredentials Repository credentials to add to the Argo CD server confgi secret
+    ## @param config.secret.repositoryCredentials Repository credentials to add to the Argo CD server config secret
     ## E.g.
     ## repositoryCredentials:
     ##   sample-ssh-key: |
@@ -3624,7 +3624,7 @@ redis:
   ## Use password authentication
   ## @param redis.auth.enabled Enable Redis dependency authentication
   ## @param redis.auth.existingSecret Existing secret to load redis dependency password
-  ## @param redis.auth.existingSecretPasswordKey Pasword key name inside the existing secret
+  ## @param redis.auth.existingSecretPasswordKey Password key name inside the existing secret
   ##
   auth:
     enabled: true

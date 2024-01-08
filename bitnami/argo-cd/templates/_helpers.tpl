@@ -300,13 +300,13 @@ Validate cluster credentials
 {{- define "argocd.validateValues.clusterCredentials" -}}
 {{- range .Values.config.clusterCredentials -}}
 {{- if not .name -}}
-Argo CD: A valid .name entry is required in all clusterCrendials objects!
+Argo CD: A valid .name entry is required in all clusterCredentials objects!
 {{- end -}}
 {{- if not .server -}}
-Argo CD: A valid .server entry is required in all clusterCrendials objects!
+Argo CD: A valid .server entry is required in all clusterCredentials objects!
 {{- end -}}
 {{- if not .config -}}
-Argo CD: A valid .config entry is required in all clusterCrendials objects!
+Argo CD: A valid .config entry is required in all clusterCredentials objects!
 {{- end -}}
 {{- end -}}
 {{- end -}}

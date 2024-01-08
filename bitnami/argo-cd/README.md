@@ -173,7 +173,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `controller.metrics.rules.spec`                                | Rules to render into the PrometheusRule object                                                       | `[]`             |
 | `controller.metrics.rules.selector`                            | Selector for the PrometheusRule object                                                               | `{}`             |
 | `controller.metrics.rules.namespace`                           | Namespace where to create the PrometheusRule object                                                  | `monitoring`     |
-| `controller.metrics.rules.additionalLabels`                    | Additional lables to add to the PrometheusRule object                                                | `{}`             |
+| `controller.metrics.rules.additionalLabels`                    | Additional labels to add to the PrometheusRule object                                                | `{}`             |
 | `controller.command`                                           | Override default container command (useful when using custom images)                                 | `[]`             |
 | `controller.defaultArgs.statusProcessors`                      | Default status processors for Argo CD controller                                                     | `20`             |
 | `controller.defaultArgs.operationProcessors`                   | Default operation processors for Argo CD controller                                                  | `10`             |
@@ -199,7 +199,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `controller.updateStrategy.type`                               | Argo CD statefulset strategy type                                                                    | `RollingUpdate`  |
 | `controller.priorityClassName`                                 | Argo CD pods' priorityClassName                                                                      | `""`             |
 | `controller.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                       | `""`             |
-| `controller.lifecycleHooks`                                    | for the Argo CD container(s) to automate configuration before or after startup                       | `{}`             |
+| `controller.lifecycleHooks`                                    | LifecycleHooks for the Argo CD container(s) to automate configuration before or after startup        | `{}`             |
 | `controller.extraEnvVars`                                      | Array with extra environment variables to add to Argo CD nodes                                       | `[]`             |
 | `controller.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Argo CD nodes                               | `""`             |
 | `controller.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Argo CD nodes                                  | `""`             |
@@ -641,7 +641,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `server.updateStrategy.type`                               | Argo CD server statefulset strategy type                                                                                        | `RollingUpdate`          |
 | `server.priorityClassName`                                 | Argo CD server pods' priorityClassName                                                                                          | `""`                     |
 | `server.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                                                  | `""`                     |
-| `server.lifecycleHooks`                                    | for the Argo CD server container(s) to automate configuration before or after startup                                           | `{}`                     |
+| `server.lifecycleHooks`                                    | LifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup                            | `{}`                     |
 | `server.extraEnvVars`                                      | Array with extra environment variables to add to Argo CD server nodes                                                           | `[]`                     |
 | `server.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Argo CD server nodes                                                   | `""`                     |
 | `server.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Argo CD server nodes                                                      | `""`                     |
@@ -880,7 +880,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dex.updateStrategy.type`                               | Dex statefulset strategy type                                                                       | `RollingUpdate`       |
 | `dex.priorityClassName`                                 | Dex pods' priorityClassName                                                                         | `""`                  |
 | `dex.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                      | `""`                  |
-| `dex.lifecycleHooks`                                    | for the Dex container(s) to automate configuration before or after startup                          | `{}`                  |
+| `dex.lifecycleHooks`                                    | LifecycleHooks for the Dex container(s) to automate configuration before or after startup           | `{}`                  |
 | `dex.extraEnvVars`                                      | Array with extra environment variables to add to Dex nodes                                          | `[]`                  |
 | `dex.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Dex nodes                                  | `""`                  |
 | `dex.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Dex nodes                                     | `""`                  |
@@ -913,7 +913,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `config.secret.argocdServerTlsConfig.crt`      | TLS certificate for the Argo CD config secret                                                         | `""`   |
 | `config.secret.argocdServerAdminPassword`      | Argo CD server admin password. Autogenerated by default.                                              | `""`   |
 | `config.secret.argocdServerAdminPasswordMtime` | Argo CD server password modification time                                                             | `""`   |
-| `config.secret.repositoryCredentials`          | Repository credentials to add to the Argo CD server confgi secret                                     | `{}`   |
+| `config.secret.repositoryCredentials`          | Repository credentials to add to the Argo CD server config secret                                     | `{}`   |
 | `config.clusterCredentials`                    | Configure external cluster credentials                                                                | `[]`   |
 
 ### Init Container Parameters
@@ -946,7 +946,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `redis.service.port`                                          | Service port for Redis dependency                                                                     | `6379`                  |
 | `redis.auth.enabled`                                          | Enable Redis dependency authentication                                                                | `true`                  |
 | `redis.auth.existingSecret`                                   | Existing secret to load redis dependency password                                                     | `""`                    |
-| `redis.auth.existingSecretPasswordKey`                        | Pasword key name inside the existing secret                                                           | `redis-password`        |
+| `redis.auth.existingSecretPasswordKey`                        | Password key name inside the existing secret                                                          | `redis-password`        |
 | `redis.architecture`                                          | Redis&reg; architecture. Allowed values: `standalone` or `replication`                                | `standalone`            |
 | `externalRedis.host`                                          | External Redis host                                                                                   | `""`                    |
 | `externalRedis.port`                                          | External Redis port                                                                                   | `6379`                  |
