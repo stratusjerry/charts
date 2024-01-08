@@ -308,7 +308,7 @@ customReadinessProbe: {}
 ## @param customStartupProbe Custom startupProbe that overrides the default one
 ##
 customStartupProbe: {}
-## @param lifecycleHooks for the ZooKeeper container(s) to automate configuration before or after startup
+## @param lifecycleHooks LifecycleHooks for the ZooKeeper container(s) to automate configuration before or after startup
 ##
 lifecycleHooks: {}
 ## ZooKeeper resource requests and limits

@@ -199,7 +199,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                                      | `{}`             |
 | `customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                                     | `{}`             |
 | `customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                       | `{}`             |
-| `lifecycleHooks`                                    | for the WordPress container(s) to automate configuration before or after startup                                         | `{}`             |
+| `lifecycleHooks`                                    | LifecycleHooks for the WordPress container(s) to automate configuration before or after startup                          | `{}`             |
 
 ### Traffic Exposure Parameters
 

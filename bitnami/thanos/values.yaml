@@ -407,7 +407,7 @@ query:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param query.lifecycleHooks for the Thanos Query container(s) to automate configuration before or after startup
+  ## @param query.lifecycleHooks LifecycleHooks for the Thanos Query container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param query.priorityClassName Thanos Query priorityClassName
@@ -1086,7 +1086,7 @@ queryFrontend:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param queryFrontend.lifecycleHooks for the Thanos Query Frontend container(s) to automate configuration before or after startup
+  ## @param queryFrontend.lifecycleHooks LifecycleHooks for the Thanos Query Frontend container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryFrontend.priorityClassName Thanos Query Frontend priorityClassName
@@ -1541,7 +1541,7 @@ bucketweb:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param bucketweb.lifecycleHooks for the Thanos Bucket Web container(s) to automate configuration before or after startup
+  ## @param bucketweb.lifecycleHooks LifecycleHooks for the Thanos Bucket Web container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param bucketweb.priorityClassName Thanos Bucket Web priorityClassName
@@ -1998,7 +1998,7 @@ compactor:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param compactor.lifecycleHooks for the Thanos Compactor container(s) to automate configuration before or after startup
+  ## @param compactor.lifecycleHooks LifecycleHooks for the Thanos Compactor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param compactor.priorityClassName Thanos Compactor priorityClassName
@@ -2471,7 +2471,7 @@ storegateway:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param storegateway.lifecycleHooks for the Thanos Store Gateway container(s) to automate configuration before or after startup
+  ## @param storegateway.lifecycleHooks LifecycleHooks for the Thanos Store Gateway container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param storegateway.priorityClassName Thanos Store Gateway priorityClassName
@@ -3122,7 +3122,7 @@ ruler:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param ruler.lifecycleHooks for the Thanos Ruler container(s) to automate configuration before or after startup
+  ## @param ruler.lifecycleHooks LifecycleHooks for the Thanos Ruler container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param ruler.priorityClassName Thanos Ruler priorityClassName
@@ -3642,7 +3642,7 @@ receive:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param receive.lifecycleHooks for the Thanos Receive container(s) to automate configuration before or after startup
+  ## @param receive.lifecycleHooks LifecycleHooks for the Thanos Receive container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param receive.priorityClassName Thanos Receive priorityClassName
@@ -4116,7 +4116,7 @@ receiveDistributor:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## @param receiveDistributor.lifecycleHooks for the Thanos Receive Distributor container(s) to automate configuration before or after startup
+  ## @param receiveDistributor.lifecycleHooks LifecycleHooks for the Thanos Receive Distributor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param receiveDistributor.priorityClassName Thanos Receive Distributor priorityClassName

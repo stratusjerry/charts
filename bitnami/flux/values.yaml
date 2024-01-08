@@ -308,7 +308,7 @@ kustomizeController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param kustomizeController.lifecycleHooks for the Kustomize Controller container(s) to automate configuration before or after startup
+  ## @param kustomizeController.lifecycleHooks LifecycleHooks for the Kustomize Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param kustomizeController.extraEnvVars Array with extra environment variables to add to Kustomize Controller nodes
@@ -746,7 +746,7 @@ helmController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param helmController.lifecycleHooks for the Helm Controller container(s) to automate configuration before or after startup
+  ## @param helmController.lifecycleHooks LifecycleHooks for the Helm Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param helmController.extraEnvVars Array with extra environment variables to add to Helm Controller nodes
@@ -1186,7 +1186,7 @@ sourceController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param sourceController.lifecycleHooks for the Source Controller container(s) to automate configuration before or after startup
+  ## @param sourceController.lifecycleHooks LifecycleHooks for the Source Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param sourceController.extraEnvVars Array with extra environment variables to add to Source Controller nodes
@@ -1782,7 +1782,7 @@ notificationController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param notificationController.lifecycleHooks for the Notification Controller container(s) to automate configuration before or after startup
+  ## @param notificationController.lifecycleHooks LifecycleHooks for the Notification Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param notificationController.extraEnvVars Array with extra environment variables to add to Notification Controller nodes
@@ -2220,7 +2220,7 @@ imageAutomationController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param imageAutomationController.lifecycleHooks for the Image Automation Controller container(s) to automate configuration before or after startup
+  ## @param imageAutomationController.lifecycleHooks LifecycleHooks for the Image Automation Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param imageAutomationController.extraEnvVars Array with extra environment variables to add to Image Automation Controller nodes
@@ -2658,7 +2658,7 @@ imageReflectorController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param imageReflectorController.lifecycleHooks for the Image Reflector Controller container(s) to automate configuration before or after startup
+  ## @param imageReflectorController.lifecycleHooks LifecycleHooks for the Image Reflector Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param imageReflectorController.extraEnvVars Array with extra environment variables to add to Image Reflector Controller nodes

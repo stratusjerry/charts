@@ -270,7 +270,7 @@ controller:
   ## @param controller.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param controller.lifecycleHooks for the MetalLB Controller container(s) to automate configuration before or after startup
+  ## @param controller.lifecycleHooks LifecycleHooks for the MetalLB Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param controller.extraEnvVars Extra environment variable to pass to the running container.
@@ -644,7 +644,7 @@ speaker:
   ## @param speaker.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param speaker.lifecycleHooks for the Speaker container(s) to automate configuration before or after startup
+  ## @param speaker.lifecycleHooks LifecycleHooks for the Speaker container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param speaker.sidecars Add additional sidecar containers to the Speaker pod(s)

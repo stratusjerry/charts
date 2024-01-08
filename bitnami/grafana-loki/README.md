@@ -140,7 +140,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `compactor.containerSecurityContext.enabled`      | Enabled Compactor containers' Security Context                                                      | `true`              |
 | `compactor.containerSecurityContext.runAsUser`    | Set Compactor containers' Security Context runAsUser                                                | `1001`              |
 | `compactor.containerSecurityContext.runAsNonRoot` | Set Compactor containers' Security Context runAsNonRoot                                             | `true`              |
-| `compactor.lifecycleHooks`                        | for the compactor container(s) to automate configuration before or after startup                    | `{}`                |
+| `compactor.lifecycleHooks`                        | LifecycleHooks for the compactor container(s) to automate configuration before or after startup     | `{}`                |
 | `compactor.hostAliases`                           | compactor pods host aliases                                                                         | `[]`                |
 | `compactor.podLabels`                             | Extra labels for compactor pods                                                                     | `{}`                |
 | `compactor.podAnnotations`                        | Annotations for compactor pods                                                                      | `{}`                |
@@ -238,7 +238,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `gateway.containerSecurityContext.enabled`      | Enabled Gateway containers' Security Context                                                          | `true`                  |
 | `gateway.containerSecurityContext.runAsUser`    | Set Gateway containers' Security Context runAsUser                                                    | `1001`                  |
 | `gateway.containerSecurityContext.runAsNonRoot` | Set Gateway containers' Security Context runAsNonRoot                                                 | `true`                  |
-| `gateway.lifecycleHooks`                        | for the gateway container(s) to automate configuration before or after startup                        | `{}`                    |
+| `gateway.lifecycleHooks`                        | LifecycleHooks for the gateway container(s) to automate configuration before or after startup         | `{}`                    |
 | `gateway.hostAliases`                           | gateway pods host aliases                                                                             | `[]`                    |
 | `gateway.podLabels`                             | Extra labels for gateway pods                                                                         | `{}`                    |
 | `gateway.podAnnotations`                        | Annotations for gateway pods                                                                          | `{}`                    |
@@ -330,7 +330,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `indexGateway.containerSecurityContext.enabled`      | Enabled index-gateway containers' Security Context                                                     | `true`          |
 | `indexGateway.containerSecurityContext.runAsUser`    | Set index-gateway containers' Security Context runAsUser                                               | `1001`          |
 | `indexGateway.containerSecurityContext.runAsNonRoot` | Set index-gateway containers' Security Context runAsNonRoot                                            | `true`          |
-| `indexGateway.lifecycleHooks`                        | for the indexGateway container(s) to automate configuration before or after startup                    | `{}`            |
+| `indexGateway.lifecycleHooks`                        | LifecycleHooks for the indexGateway container(s) to automate configuration before or after startup     | `{}`            |
 | `indexGateway.hostAliases`                           | indexGateway pods host aliases                                                                         | `[]`            |
 | `indexGateway.podLabels`                             | Extra labels for indexGateway pods                                                                     | `{}`            |
 | `indexGateway.podAnnotations`                        | Annotations for indexGateway pods                                                                      | `{}`            |
@@ -409,7 +409,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `distributor.containerSecurityContext.enabled`      | Enabled Distributor containers' Security Context                                                      | `true`          |
 | `distributor.containerSecurityContext.runAsUser`    | Set Distributor containers' Security Context runAsUser                                                | `1001`          |
 | `distributor.containerSecurityContext.runAsNonRoot` | Set Distributor containers' Security Context runAsNonRoot                                             | `true`          |
-| `distributor.lifecycleHooks`                        | for the distributor container(s) to automate configuration before or after startup                    | `{}`            |
+| `distributor.lifecycleHooks`                        | LifecycleHooks for the distributor container(s) to automate configuration before or after startup     | `{}`            |
 | `distributor.hostAliases`                           | distributor pods host aliases                                                                         | `[]`            |
 | `distributor.podLabels`                             | Extra labels for distributor pods                                                                     | `{}`            |
 | `distributor.podAnnotations`                        | Annotations for distributor pods                                                                      | `{}`            |
@@ -481,7 +481,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `ingester.customLivenessProbe`                   | Custom livenessProbe that overrides the default one                                                | `{}`            |
 | `ingester.customReadinessProbe`                  | Custom readinessProbe that overrides the default one                                               | `{}`            |
 | `ingester.customStartupProbe`                    | Custom startupProbe that overrides the default one                                                 | `{}`            |
-| `ingester.lifecycleHooks`                        | for the ingester container(s) to automate configuration before or after startup                    | `{}`            |
+| `ingester.lifecycleHooks`                        | LifecycleHooks for the ingester container(s) to automate configuration before or after startup     | `{}`            |
 | `ingester.resources.limits`                      | The resources limits for the Ingester containers                                                   | `{}`            |
 | `ingester.resources.requests`                    | The requested resources for the Ingester containers                                                | `{}`            |
 | `ingester.podSecurityContext.enabled`            | Enabled Ingester pods' Security Context                                                            | `true`          |
@@ -581,7 +581,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `querier.containerSecurityContext.enabled`      | Enabled Querier containers' Security Context                                                      | `true`          |
 | `querier.containerSecurityContext.runAsUser`    | Set Querier containers' Security Context runAsUser                                                | `1001`          |
 | `querier.containerSecurityContext.runAsNonRoot` | Set Querier containers' Security Context runAsNonRoot                                             | `true`          |
-| `querier.lifecycleHooks`                        | for the Querier container(s) to automate configuration before or after startup                    | `{}`            |
+| `querier.lifecycleHooks`                        | LifecycleHooks for the Querier container(s) to automate configuration before or after startup     | `{}`            |
 | `querier.hostAliases`                           | querier pods host aliases                                                                         | `[]`            |
 | `querier.podLabels`                             | Extra labels for querier pods                                                                     | `{}`            |
 | `querier.podAnnotations`                        | Annotations for querier pods                                                                      | `{}`            |
@@ -672,7 +672,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryFrontend.containerSecurityContext.enabled`      | Enabled queryFrontend containers' Security Context                                                      | `true`          |
 | `queryFrontend.containerSecurityContext.runAsUser`    | Set queryFrontend containers' Security Context runAsUser                                                | `1001`          |
 | `queryFrontend.containerSecurityContext.runAsNonRoot` | Set queryFrontend containers' Security Context runAsNonRoot                                             | `true`          |
-| `queryFrontend.lifecycleHooks`                        | for the queryFrontend container(s) to automate configuration before or after startup                    | `{}`            |
+| `queryFrontend.lifecycleHooks`                        | LifecycleHooks for the queryFrontend container(s) to automate configuration before or after startup     | `{}`            |
 | `queryFrontend.hostAliases`                           | queryFrontend pods host aliases                                                                         | `[]`            |
 | `queryFrontend.podLabels`                             | Extra labels for queryFrontend pods                                                                     | `{}`            |
 | `queryFrontend.podAnnotations`                        | Annotations for queryFrontend pods                                                                      | `{}`            |
@@ -753,7 +753,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryScheduler.containerSecurityContext.enabled`      | Enabled queryScheduler containers' Security Context                                                      | `true`          |
 | `queryScheduler.containerSecurityContext.runAsUser`    | Set queryScheduler containers' Security Context runAsUser                                                | `1001`          |
 | `queryScheduler.containerSecurityContext.runAsNonRoot` | Set queryScheduler containers' Security Context runAsNonRoot                                             | `true`          |
-| `queryScheduler.lifecycleHooks`                        | for the queryScheduler container(s) to automate configuration before or after startup                    | `{}`            |
+| `queryScheduler.lifecycleHooks`                        | LifecycleHooks for the queryScheduler container(s) to automate configuration before or after startup     | `{}`            |
 | `queryScheduler.hostAliases`                           | queryScheduler pods host aliases                                                                         | `[]`            |
 | `queryScheduler.podLabels`                             | Extra labels for queryScheduler pods                                                                     | `{}`            |
 | `queryScheduler.podAnnotations`                        | Annotations for queryScheduler pods                                                                      | `{}`            |
@@ -827,7 +827,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `ruler.customLivenessProbe`                   | Custom livenessProbe that overrides the default one                                             | `{}`            |
 | `ruler.customReadinessProbe`                  | Custom readinessProbe that overrides the default one                                            | `{}`            |
 | `ruler.customStartupProbe`                    | Custom startupProbe that overrides the default one                                              | `{}`            |
-| `ruler.lifecycleHooks`                        | for the ruler container(s) to automate configuration before or after startup                    | `{}`            |
+| `ruler.lifecycleHooks`                        | LifecycleHooks for the ruler container(s) to automate configuration before or after startup     | `{}`            |
 | `ruler.resources.limits`                      | The resources limits for the Ruler containers                                                   | `{}`            |
 | `ruler.resources.requests`                    | The requested resources for the Ruler containers                                                | `{}`            |
 | `ruler.podSecurityContext.enabled`            | Enabled Ruler pods' Security Context                                                            | `true`          |
@@ -926,7 +926,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `tableManager.containerSecurityContext.enabled`      | Enabled table-manager containers' Security Context                                                     | `true`          |
 | `tableManager.containerSecurityContext.runAsUser`    | Set table-manager containers' Security Context runAsUser                                               | `1001`          |
 | `tableManager.containerSecurityContext.runAsNonRoot` | Set table-manager containers' Security Context runAsNonRoot                                            | `true`          |
-| `tableManager.lifecycleHooks`                        | for the tableManager container(s) to automate configuration before or after startup                    | `{}`            |
+| `tableManager.lifecycleHooks`                        | LifecycleHooks for the tableManager container(s) to automate configuration before or after startup     | `{}`            |
 | `tableManager.hostAliases`                           | tableManager pods host aliases                                                                         | `[]`            |
 | `tableManager.podLabels`                             | Extra labels for tableManager pods                                                                     | `{}`            |
 | `tableManager.podAnnotations`                        | Annotations for tableManager pods                                                                      | `{}`            |
@@ -1004,7 +1004,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `promtail.customLivenessProbe`                   | Custom livenessProbe that overrides the default one                                                              | `{}`                       |
 | `promtail.customReadinessProbe`                  | Custom readinessProbe that overrides the default one                                                             | `{}`                       |
 | `promtail.customStartupProbe`                    | Custom startupProbe that overrides the default one                                                               | `{}`                       |
-| `promtail.lifecycleHooks`                        | for the promtail container(s) to automate configuration before or after startup                                  | `{}`                       |
+| `promtail.lifecycleHooks`                        | LifecycleHooks for the promtail container(s) to automate configuration before or after startup                   | `{}`                       |
 | `promtail.resources.limits`                      | The resources limits for the Promtail containers                                                                 | `{}`                       |
 | `promtail.resources.requests`                    | The requested resources for the Promtail containers                                                              | `{}`                       |
 | `promtail.podSecurityContext.enabled`            | Enabled Promtail pods' Security Context                                                                          | `true`                     |

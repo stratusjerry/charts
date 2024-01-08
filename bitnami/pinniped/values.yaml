@@ -332,7 +332,7 @@ concierge:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param concierge.lifecycleHooks for the Concierge container(s) to automate configuration before or after startup
+  ## @param concierge.lifecycleHooks LifecycleHooks for the Concierge container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param concierge.extraEnvVars Array with extra environment variables to add to Concierge nodes
@@ -676,7 +676,7 @@ supervisor:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param supervisor.lifecycleHooks for the Supervisor container(s) to automate configuration before or after startup
+  ## @param supervisor.lifecycleHooks LifecycleHooks for the Supervisor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param supervisor.extraEnvVars Array with extra environment variables to add to Supervisor nodes

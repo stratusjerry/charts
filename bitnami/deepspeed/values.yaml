@@ -311,7 +311,7 @@ client:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param client.lifecycleHooks for the client container(s) to automate configuration before or after startup
+  ## @param client.lifecycleHooks LifecycleHooks for the client container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param client.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -658,7 +658,7 @@ worker:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param worker.lifecycleHooks for the client container(s) to automate configuration before or after startup
+  ## @param worker.lifecycleHooks LifecycleHooks for the client container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param worker.runtimeClassName Name of the runtime class to be used by pod(s)

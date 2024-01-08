@@ -278,7 +278,7 @@ client:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param client.lifecycleHooks for the Appsmith client container(s) to automate configuration before or after startup
+  ## @param client.lifecycleHooks LifecycleHooks for the Appsmith client container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param client.extraEnvVars Array with extra environment variables to add to Appsmith client nodes
@@ -693,7 +693,7 @@ backend:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param backend.lifecycleHooks for the Appsmith backend container(s) to automate configuration before or after startup
+  ## @param backend.lifecycleHooks LifecycleHooks for the Appsmith backend container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param backend.extraEnvVars Array with extra environment variables to add to Appsmith backend nodes
@@ -1027,7 +1027,7 @@ rts:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param rts.lifecycleHooks for the Appsmith rts container(s) to automate configuration before or after startup
+  ## @param rts.lifecycleHooks LifecycleHooks for the Appsmith rts container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param rts.extraEnvVars Array with extra environment variables to add to Appsmith rts nodes

@@ -148,7 +148,7 @@ server:
   ## @param server.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param server.lifecycleHooks for the Dataflow server container(s) to automate configuration before or after startup
+  ## @param server.lifecycleHooks LifecycleHooks for the Dataflow server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param server.extraEnvVars Extra environment variables to be set on Dataflow server container
@@ -647,7 +647,7 @@ skipper:
   ## @param skipper.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param skipper.lifecycleHooks for the Skipper container(s) to automate configuration before or after startup
+  ## @param skipper.lifecycleHooks LifecycleHooks for the Skipper container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param skipper.extraEnvVars Extra environment variables to be set on Skipper server container
@@ -1220,7 +1220,7 @@ metrics:
   ## @param metrics.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param metrics.lifecycleHooks for the Prometheus Proxy container(s) to automate configuration before or after startup
+  ## @param metrics.lifecycleHooks LifecycleHooks for the Prometheus Proxy container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param metrics.extraEnvVars Array with extra environment variables to add to Prometheus Proxy nodes

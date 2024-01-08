@@ -680,7 +680,7 @@ defaultBackend:
   ## @param defaultBackend.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param defaultBackend.lifecycleHooks for the %%MAIN_CONTAINER_NAME%% container(s) to automate configuration before or after startup
+  ## @param defaultBackend.lifecycleHooks LifecycleHooks for the %%MAIN_CONTAINER_NAME%% container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param defaultBackend.extraEnvVars Array with extra environment variables to add to %%MAIN_CONTAINER_NAME%% nodes

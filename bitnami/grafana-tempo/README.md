@@ -154,7 +154,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `compactor.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                           | `false`          |
 | `compactor.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                  | `["ALL"]`        |
 | `compactor.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                    | `RuntimeDefault` |
-| `compactor.lifecycleHooks`                                    | for the compactor container(s) to automate configuration before or after startup                    | `{}`             |
+| `compactor.lifecycleHooks`                                    | LifecycleHooks for the compactor container(s) to automate configuration before or after startup     | `{}`             |
 | `compactor.hostAliases`                                       | compactor pods host aliases                                                                         | `[]`             |
 | `compactor.podLabels`                                         | Extra labels for compactor pods                                                                     | `{}`             |
 | `compactor.podAnnotations`                                    | Annotations for compactor pods                                                                      | `{}`             |
@@ -235,7 +235,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `distributor.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                             | `false`          |
 | `distributor.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                    | `["ALL"]`        |
 | `distributor.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                      | `RuntimeDefault` |
-| `distributor.lifecycleHooks`                                    | for the distributor container(s) to automate configuration before or after startup                    | `{}`             |
+| `distributor.lifecycleHooks`                                    | LifecycleHooks for the distributor container(s) to automate configuration before or after startup     | `{}`             |
 | `distributor.hostAliases`                                       | distributor pods host aliases                                                                         | `[]`             |
 | `distributor.podLabels`                                         | Extra labels for distributor pods                                                                     | `{}`             |
 | `distributor.podAnnotations`                                    | Annotations for distributor pods                                                                      | `{}`             |
@@ -319,7 +319,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `metricsGenerator.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                  | `false`          |
 | `metricsGenerator.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                         | `["ALL"]`        |
 | `metricsGenerator.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                           | `RuntimeDefault` |
-| `metricsGenerator.lifecycleHooks`                                    | for the metricsGenerator container(s) to automate configuration before or after startup                    | `{}`             |
+| `metricsGenerator.lifecycleHooks`                                    | LifecycleHooks for the metricsGenerator container(s) to automate configuration before or after startup     | `{}`             |
 | `metricsGenerator.hostAliases`                                       | metricsGenerator pods host aliases                                                                         | `[]`             |
 | `metricsGenerator.podLabels`                                         | Extra labels for metricsGenerator pods                                                                     | `{}`             |
 | `metricsGenerator.podAnnotations`                                    | Annotations for metricsGenerator pods                                                                      | `{}`             |
@@ -389,7 +389,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `ingester.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                | `{}`             |
 | `ingester.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                               | `{}`             |
 | `ingester.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                 | `{}`             |
-| `ingester.lifecycleHooks`                                    | for the ingester container(s) to automate configuration before or after startup                    | `{}`             |
+| `ingester.lifecycleHooks`                                    | LifecycleHooks for the ingester container(s) to automate configuration before or after startup     | `{}`             |
 | `ingester.resources.limits`                                  | The resources limits for the Ingester containers                                                   | `{}`             |
 | `ingester.resources.requests`                                | The requested resources for the Ingester containers                                                | `{}`             |
 | `ingester.podSecurityContext.enabled`                        | Enabled Ingester pods' Security Context                                                            | `true`           |
@@ -497,7 +497,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `querier.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                         | `false`          |
 | `querier.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                | `["ALL"]`        |
 | `querier.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                  | `RuntimeDefault` |
-| `querier.lifecycleHooks`                                    | for the Querier container(s) to automate configuration before or after startup                    | `{}`             |
+| `querier.lifecycleHooks`                                    | LifecycleHooks for the Querier container(s) to automate configuration before or after startup     | `{}`             |
 | `querier.hostAliases`                                       | querier pods host aliases                                                                         | `[]`             |
 | `querier.podLabels`                                         | Extra labels for querier pods                                                                     | `{}`             |
 | `querier.podAnnotations`                                    | Annotations for querier pods                                                                      | `{}`             |
@@ -580,7 +580,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryFrontend.containerSecurityContext.allowPrivilegeEscalation`       | Set container's Security Context allowPrivilegeEscalation                                                           | `false`                               |
 | `queryFrontend.containerSecurityContext.capabilities.drop`              | List of capabilities to be dropped                                                                                  | `["ALL"]`                             |
 | `queryFrontend.containerSecurityContext.seccompProfile.type`            | Set container's Security Context seccomp profile                                                                    | `RuntimeDefault`                      |
-| `queryFrontend.lifecycleHooks`                                          | for the queryFrontend container(s) to automate configuration before or after startup                                | `{}`                                  |
+| `queryFrontend.lifecycleHooks`                                          | LifecycleHooks for the queryFrontend container(s) to automate configuration before or after startup                 | `{}`                                  |
 | `queryFrontend.hostAliases`                                             | queryFrontend pods host aliases                                                                                     | `[]`                                  |
 | `queryFrontend.podLabels`                                               | Extra labels for queryFrontend pods                                                                                 | `{}`                                  |
 | `queryFrontend.podAnnotations`                                          | Annotations for queryFrontend pods                                                                                  | `{}`                                  |
@@ -636,7 +636,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryFrontend.query.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                                 | `{}`                                  |
 | `queryFrontend.query.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                                | `{}`                                  |
 | `queryFrontend.query.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                  | `{}`                                  |
-| `queryFrontend.query.lifecycleHooks`                                    | for the query sidecar container(s) to automate configuration before or after startup                                | `{}`                                  |
+| `queryFrontend.query.lifecycleHooks`                                    | LifecycleHooks for the query sidecar container(s) to automate configuration before or after startup                 | `{}`                                  |
 | `queryFrontend.query.containerSecurityContext.enabled`                  | Enabled containers' Security Context                                                                                | `true`                                |
 | `queryFrontend.query.containerSecurityContext.runAsUser`                | Set containers' Security Context runAsUser                                                                          | `1001`                                |
 | `queryFrontend.query.containerSecurityContext.runAsNonRoot`             | Set container's Security Context runAsNonRoot                                                                       | `true`                                |
@@ -717,7 +717,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `vulture.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                       | `false`                                 |
 | `vulture.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                              | `["ALL"]`                               |
 | `vulture.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                                | `RuntimeDefault`                        |
-| `vulture.lifecycleHooks`                                    | for the vulture container(s) to automate configuration before or after startup                                  | `{}`                                    |
+| `vulture.lifecycleHooks`                                    | LifecycleHooks for the vulture container(s) to automate configuration before or after startup                   | `{}`                                    |
 | `vulture.hostAliases`                                       | vulture pods host aliases                                                                                       | `[]`                                    |
 | `vulture.podLabels`                                         | Extra labels for vulture pods                                                                                   | `{}`                                    |
 | `vulture.podAnnotations`                                    | Annotations for vulture pods                                                                                    | `{}`                                    |

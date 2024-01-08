@@ -332,7 +332,7 @@ operator:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param operator.lifecycleHooks for the Kuberay Operator container(s) to automate configuration before or after startup
+  ## @param operator.lifecycleHooks LifecycleHooks for the Kuberay Operator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param operator.extraEnvVars Array with extra environment variables to add to Kuberay Operator nodes
@@ -910,7 +910,7 @@ apiserver:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param apiserver.lifecycleHooks for the Kuberay API Server container(s) to automate configuration before or after startup
+  ## @param apiserver.lifecycleHooks LifecycleHooks for the Kuberay API Server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param apiserver.extraEnvVars Array with extra environment variables to add to Kuberay API Server nodes

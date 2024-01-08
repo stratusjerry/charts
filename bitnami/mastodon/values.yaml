@@ -422,7 +422,7 @@ web:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param web.lifecycleHooks for the Mastodon web container(s) to automate configuration before or after startup
+  ## @param web.lifecycleHooks LifecycleHooks for the Mastodon web container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param web.extraEnvVars Array with extra environment variables to add to Mastodon web nodes
@@ -700,7 +700,7 @@ sidekiq:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param sidekiq.lifecycleHooks for the Mastodon sidekiq container(s) to automate configuration before or after startup
+  ## @param sidekiq.lifecycleHooks LifecycleHooks for the Mastodon sidekiq container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param sidekiq.extraEnvVars Array with extra environment variables to add to Mastodon sidekiq nodes
@@ -928,7 +928,7 @@ streaming:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param streaming.lifecycleHooks for the Mastodon streaming container(s) to automate configuration before or after startup
+  ## @param streaming.lifecycleHooks LifecycleHooks for the Mastodon streaming container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param streaming.extraEnvVars Array with extra environment variables to add to Mastodon streaming nodes

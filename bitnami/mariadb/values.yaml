@@ -182,7 +182,7 @@ primary:
   ## @param primary.args Override default container args on MariaDB Primary container(s) (useful when using custom images)
   ##
   args: []
-  ## @param primary.lifecycleHooks for the MariaDB Primary container(s) to automate configuration before or after startup
+  ## @param primary.lifecycleHooks LifecycleHooks for the MariaDB Primary container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param primary.hostAliases Add deployment host aliases
@@ -586,7 +586,7 @@ secondary:
   ## @param secondary.args Override default container args on MariaDB Secondary container(s) (useful when using custom images)
   ##
   args: []
-  ## @param secondary.lifecycleHooks for the MariaDB Secondary container(s) to automate configuration before or after startup
+  ## @param secondary.lifecycleHooks LifecycleHooks for the MariaDB Secondary container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param secondary.hostAliases Add deployment host aliases

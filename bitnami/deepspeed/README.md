@@ -155,7 +155,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `client.containerSecurityContext.allowPrivilegeEscalation` | Set Client container's privilege escalation                                                      | `false`          |
 | `client.containerSecurityContext.capabilities.drop`        | Set Client container's Security Context runAsNonRoot                                             | `["ALL"]`        |
 | `client.containerSecurityContext.seccompProfile.type`      | Set Client container's Security Context seccomp profile                                          | `RuntimeDefault` |
-| `client.lifecycleHooks`                                    | for the client container(s) to automate configuration before or after startup                    | `{}`             |
+| `client.lifecycleHooks`                                    | LifecycleHooks for the client container(s) to automate configuration before or after startup     | `{}`             |
 | `client.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                   | `""`             |
 | `client.hostAliases`                                       | client pods host aliases                                                                         | `[]`             |
 | `client.labels`                                            | Extra labels for the client deployment                                                           | `{}`             |
@@ -250,7 +250,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `worker.containerSecurityContext.capabilities.drop`        | Set Worker container's Security Context runAsNonRoot                                               | `["ALL"]`        |
 | `worker.containerSecurityContext.seccompProfile.type`      | Set Worker container's Security Context seccomp profile                                            | `RuntimeDefault` |
 | `worker.containerSecurityContext.privileged`               | Set Worker container's Security Context privileged                                                 | `false`          |
-| `worker.lifecycleHooks`                                    | for the client container(s) to automate configuration before or after startup                      | `{}`             |
+| `worker.lifecycleHooks`                                    | LifecycleHooks for the client container(s) to automate configuration before or after startup       | `{}`             |
 | `worker.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                     | `""`             |
 | `worker.hostAliases`                                       | client pods host aliases                                                                           | `[]`             |
 | `worker.labels`                                            | Labels for the worker deployment                                                                   | `{}`             |

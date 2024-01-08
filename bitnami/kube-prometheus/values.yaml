@@ -94,7 +94,7 @@ operator:
   ## @param operator.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param operator.lifecycleHooks for the Prometheus Operator container(s) to automate configuration before or after startup
+  ## @param operator.lifecycleHooks LifecycleHooks for the Prometheus Operator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param operator.extraEnvVars Array with extra environment variables to add to Prometheus Operator nodes
@@ -2422,7 +2422,7 @@ blackboxExporter:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param blackboxExporter.lifecycleHooks for the blackboxExporter container(s) to automate configuration before or after startup
+  ## @param blackboxExporter.lifecycleHooks LifecycleHooks for the blackboxExporter container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param blackboxExporter.hostAliases blackboxExporter pods host aliases

@@ -370,7 +370,7 @@ compactor:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param compactor.lifecycleHooks for the compactor container(s) to automate configuration before or after startup
+  ## @param compactor.lifecycleHooks LifecycleHooks for the compactor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param compactor.hostAliases compactor pods host aliases
@@ -641,7 +641,7 @@ distributor:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param distributor.lifecycleHooks for the distributor container(s) to automate configuration before or after startup
+  ## @param distributor.lifecycleHooks LifecycleHooks for the distributor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param distributor.hostAliases distributor pods host aliases
@@ -918,7 +918,7 @@ metricsGenerator:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param metricsGenerator.lifecycleHooks for the metricsGenerator container(s) to automate configuration before or after startup
+  ## @param metricsGenerator.lifecycleHooks LifecycleHooks for the metricsGenerator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param metricsGenerator.hostAliases metricsGenerator pods host aliases
@@ -1149,7 +1149,7 @@ ingester:
   ## @param ingester.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param ingester.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param ingester.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## ingester resource requests and limits
@@ -1505,7 +1505,7 @@ querier:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param querier.lifecycleHooks for the Querier container(s) to automate configuration before or after startup
+  ## @param querier.lifecycleHooks LifecycleHooks for the Querier container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param querier.hostAliases querier pods host aliases
@@ -1780,7 +1780,7 @@ queryFrontend:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param queryFrontend.lifecycleHooks for the queryFrontend container(s) to automate configuration before or after startup
+  ## @param queryFrontend.lifecycleHooks LifecycleHooks for the queryFrontend container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryFrontend.hostAliases queryFrontend pods host aliases
@@ -2245,7 +2245,7 @@ vulture:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param vulture.lifecycleHooks for the vulture container(s) to automate configuration before or after startup
+  ## @param vulture.lifecycleHooks LifecycleHooks for the vulture container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param vulture.hostAliases vulture pods host aliases

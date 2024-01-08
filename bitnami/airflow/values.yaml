@@ -326,7 +326,7 @@ web:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param web.lifecycleHooks for the Airflow web container(s) to automate configuration before or after startup
+  ## @param web.lifecycleHooks LifecycleHooks for the Airflow web container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param web.hostAliases Deployment pod host aliases
@@ -540,7 +540,7 @@ scheduler:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param scheduler.lifecycleHooks for the Airflow scheduler container(s) to automate configuration before or after startup
+  ## @param scheduler.lifecycleHooks LifecycleHooks for the Airflow scheduler container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param scheduler.hostAliases Deployment pod host aliases
@@ -802,7 +802,7 @@ worker:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param worker.lifecycleHooks for the Airflow worker container(s) to automate configuration before or after startup
+  ## @param worker.lifecycleHooks LifecycleHooks for the Airflow worker container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param worker.hostAliases Deployment pod host aliases
@@ -1382,7 +1382,7 @@ metrics:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param metrics.lifecycleHooks for the Airflow exporter container(s) to automate configuration before or after startup
+  ## @param metrics.lifecycleHooks LifecycleHooks for the Airflow exporter container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param metrics.hostAliases Airflow exporter pods host aliases

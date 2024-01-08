@@ -410,7 +410,7 @@ tracking:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param tracking.lifecycleHooks for the mlflow container(s) to automate configuration before or after startup
+  ## @param tracking.lifecycleHooks LifecycleHooks for the mlflow container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param tracking.extraEnvVars Array with extra environment variables to add to mlflow nodes
@@ -932,7 +932,7 @@ run:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param run.lifecycleHooks for the run container(s) to automate configuration before or after startup
+  ## @param run.lifecycleHooks LifecycleHooks for the run container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param run.runtimeClassName Name of the runtime class to be used by pod(s)

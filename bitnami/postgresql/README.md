@@ -203,7 +203,7 @@ kubectl delete pvc -l release=my-release
 | `primary.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                                      | `{}`                  |
 | `primary.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                                     | `{}`                  |
 | `primary.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                       | `{}`                  |
-| `primary.lifecycleHooks`                                    | for the PostgreSQL Primary container to automate configuration before or after startup                                   | `{}`                  |
+| `primary.lifecycleHooks`                                    | LifecycleHooks for the PostgreSQL Primary container to automate configuration before or after startup                    | `{}`                  |
 | `primary.resources.limits`                                  | The resources limits for the PostgreSQL Primary containers                                                               | `{}`                  |
 | `primary.resources.requests.memory`                         | The requested memory for the PostgreSQL Primary containers                                                               | `256Mi`               |
 | `primary.resources.requests.cpu`                            | The requested cpu for the PostgreSQL Primary containers                                                                  | `250m`                |
@@ -303,7 +303,7 @@ kubectl delete pvc -l release=my-release
 | `readReplicas.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                                      | `{}`                  |
 | `readReplicas.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                                     | `{}`                  |
 | `readReplicas.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                       | `{}`                  |
-| `readReplicas.lifecycleHooks`                                    | for the PostgreSQL read only container to automate configuration before or after startup                                 | `{}`                  |
+| `readReplicas.lifecycleHooks`                                    | LifecycleHooks for the PostgreSQL read only container to automate configuration before or after startup                  | `{}`                  |
 | `readReplicas.resources.limits`                                  | The resources limits for the PostgreSQL read only containers                                                             | `{}`                  |
 | `readReplicas.resources.requests.memory`                         | The requested memory for the PostgreSQL read only containers                                                             | `256Mi`               |
 | `readReplicas.resources.requests.cpu`                            | The requested cpu for the PostgreSQL read only containers                                                                | `250m`                |

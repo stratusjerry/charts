@@ -240,7 +240,7 @@ command: []
 ## @param args Override default container args (useful when using custom images)
 ##
 args: []
-## @param lifecycleHooks for the Apache server container(s) to automate configuration before or after startup
+## @param lifecycleHooks lifecycleHooks for the Apache server container(s) to automate configuration before or after startup
 ##
 lifecycleHooks: {}
 ## Apache pods' resource requests and limits

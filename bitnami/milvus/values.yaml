@@ -532,7 +532,7 @@ dataCoord:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param dataCoord.lifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
+  ## @param dataCoord.lifecycleHooks LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dataCoord.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -1020,7 +1020,7 @@ rootCoord:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param rootCoord.lifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
+  ## @param rootCoord.lifecycleHooks LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param rootCoord.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -1507,7 +1507,7 @@ queryCoord:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param queryCoord.lifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
+  ## @param queryCoord.lifecycleHooks LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryCoord.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -1995,7 +1995,7 @@ indexCoord:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param indexCoord.lifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
+  ## @param indexCoord.lifecycleHooks LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param indexCoord.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -2483,7 +2483,7 @@ dataNode:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param dataNode.lifecycleHooks for the data node container(s) to automate configuration before or after startup
+  ## @param dataNode.lifecycleHooks LifecycleHooks for the data node container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dataNode.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -2971,7 +2971,7 @@ queryNode:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param queryNode.lifecycleHooks for the data node container(s) to automate configuration before or after startup
+  ## @param queryNode.lifecycleHooks LifecycleHooks for the data node container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryNode.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -3459,7 +3459,7 @@ indexNode:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param indexNode.lifecycleHooks for the data node container(s) to automate configuration before or after startup
+  ## @param indexNode.lifecycleHooks LifecycleHooks for the data node container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param indexNode.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -3976,7 +3976,7 @@ proxy:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param proxy.lifecycleHooks for the proxy container(s) to automate configuration before or after startup
+  ## @param proxy.lifecycleHooks LifecycleHooks for the proxy container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param proxy.runtimeClassName Name of the runtime class to be used by pod(s)
@@ -4476,7 +4476,7 @@ attu:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param attu.lifecycleHooks for the attu container(s) to automate configuration before or after startup
+  ## @param attu.lifecycleHooks LifecycleHooks for the attu container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param attu.runtimeClassName Name of the runtime class to be used by pod(s)

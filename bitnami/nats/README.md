@@ -172,7 +172,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `nodeSelector`                                      | Node labels for pod assignment. Evaluated as a template.                                              | `{}`             |
 | `tolerations`                                       | Tolerations for pod assignment. Evaluated as a template.                                              | `[]`             |
 | `topologySpreadConstraints`                         | Topology Spread Constraints for NATS pods assignment spread across your cluster among failure-domains | `[]`             |
-| `lifecycleHooks`                                    | for the NATS container(s) to automate configuration before or after startup                           | `{}`             |
+| `lifecycleHooks`                                    | LifecycleHooks for the NATS container(s) to automate configuration before or after startup            | `{}`             |
 | `extraVolumes`                                      | Optionally specify extra list of additional volumes for NATS pods                                     | `[]`             |
 | `extraVolumeMounts`                                 | Optionally specify extra list of additional volumeMounts for NATS container(s)                        | `[]`             |
 | `initContainers`                                    | Add additional init containers to the NATS pods                                                       | `[]`             |

@@ -181,7 +181,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment                                                          | `[]`                      |
 | `updateStrategy.type`                               | haproxy statefulset strategy type                                                                       | `RollingUpdate`           |
 | `priorityClassName`                                 | haproxy pods' priorityClassName                                                                         | `""`                      |
-| `lifecycleHooks`                                    | for the haproxy container(s) to automate configuration before or after startup                          | `{}`                      |
+| `lifecycleHooks`                                    | LifecycleHooks for the haproxy container(s) to automate configuration before or after startup           | `{}`                      |
 | `extraEnvVars`                                      | Array with extra environment variables to add to haproxy nodes                                          | `[]`                      |
 | `extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for haproxy nodes                                  | `""`                      |
 | `extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for haproxy nodes                                     | `""`                      |

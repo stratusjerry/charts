@@ -323,7 +323,7 @@ influxdb:
   ## @param influxdb.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param influxdb.lifecycleHooks for the InfluxDB&trade; container(s) to automate configuration before or after startup
+  ## @param influxdb.lifecycleHooks LifecycleHooks for the InfluxDB&trade; container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param influxdb.extraEnvVars Array containing extra env vars to configure InfluxDB&trade;

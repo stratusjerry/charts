@@ -113,7 +113,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `primary.name`                                              | Name of the primary database (eg primary, master, leader, ...)                                                    | `primary`           |
 | `primary.command`                                           | Override default container command on MariaDB Primary container(s) (useful when using custom images)              | `[]`                |
 | `primary.args`                                              | Override default container args on MariaDB Primary container(s) (useful when using custom images)                 | `[]`                |
-| `primary.lifecycleHooks`                                    | for the MariaDB Primary container(s) to automate configuration before or after startup                            | `{}`                |
+| `primary.lifecycleHooks`                                    | LifecycleHooks for the MariaDB Primary container(s) to automate configuration before or after startup             | `{}`                |
 | `primary.hostAliases`                                       | Add deployment host aliases                                                                                       | `[]`                |
 | `primary.configuration`                                     | MariaDB Primary configuration to be injected as ConfigMap                                                         | `""`                |
 | `primary.existingConfigmap`                                 | Name of existing ConfigMap with MariaDB Primary configuration.                                                    | `""`                |
@@ -209,7 +209,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `secondary.replicaCount`                                      | Number of MariaDB secondary replicas                                                                                  | `1`                 |
 | `secondary.command`                                           | Override default container command on MariaDB Secondary container(s) (useful when using custom images)                | `[]`                |
 | `secondary.args`                                              | Override default container args on MariaDB Secondary container(s) (useful when using custom images)                   | `[]`                |
-| `secondary.lifecycleHooks`                                    | for the MariaDB Secondary container(s) to automate configuration before or after startup                              | `{}`                |
+| `secondary.lifecycleHooks`                                    | LifecycleHooks for the MariaDB Secondary container(s) to automate configuration before or after startup               | `{}`                |
 | `secondary.hostAliases`                                       | Add deployment host aliases                                                                                           | `[]`                |
 | `secondary.configuration`                                     | MariaDB Secondary configuration to be injected as ConfigMap                                                           | `""`                |
 | `secondary.existingConfigmap`                                 | Name of existing ConfigMap with MariaDB Secondary configuration.                                                      | `""`                |

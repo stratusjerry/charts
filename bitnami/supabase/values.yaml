@@ -489,7 +489,7 @@ auth:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param auth.lifecycleHooks for the Supabase auth container(s) to automate configuration before or after startup
+  ## @param auth.lifecycleHooks LifecycleHooks for the Supabase auth container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param auth.extraEnvVars Array with extra environment variables to add to Supabase auth nodes
@@ -823,7 +823,7 @@ meta:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param meta.lifecycleHooks for the Supabase Postgres Meta container(s) to automate configuration before or after startup
+  ## @param meta.lifecycleHooks LifecycleHooks for the Supabase Postgres Meta container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param meta.extraEnvVars Array with extra environment variables to add to Supabase Postgres Meta nodes
@@ -1176,7 +1176,7 @@ realtime:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param realtime.lifecycleHooks for the Supabase realtime container(s) to automate configuration before or after startup
+  ## @param realtime.lifecycleHooks LifecycleHooks for the Supabase realtime container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param realtime.extraEnvVars Array with extra environment variables to add to Supabase realtime nodes
@@ -1508,7 +1508,7 @@ rest:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param rest.lifecycleHooks for the Supabase rest container(s) to automate configuration before or after startup
+  ## @param rest.lifecycleHooks LifecycleHooks for the Supabase rest container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param rest.extraEnvVars Array with extra environment variables to add to Supabase rest nodes
@@ -1845,7 +1845,7 @@ storage:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param storage.lifecycleHooks for the Supabase storage container(s) to automate configuration before or after startup
+  ## @param storage.lifecycleHooks LifecycleHooks for the Supabase storage container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param storage.extraEnvVars Array with extra environment variables to add to Supabase storage nodes
@@ -2229,7 +2229,7 @@ studio:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param studio.lifecycleHooks for the Supabase studio container(s) to automate configuration before or after startup
+  ## @param studio.lifecycleHooks LifecycleHooks for the Supabase studio container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param studio.extraEnvVars Array with extra environment variables to add to Supabase studio nodes

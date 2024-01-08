@@ -1245,7 +1245,7 @@ authProxy:
   ##   - --oidc-issuer-url=https://accounts.google.com # Only needed if provider is oidc
   ##
   extraFlags: []
-  ## @param authProxy.lifecycleHooks for the Auth Proxy container(s) to automate configuration before or after startup
+  ## @param authProxy.lifecycleHooks LifecycleHooks for the Auth Proxy container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param authProxy.command Override default container command (useful when using custom images)
@@ -1369,7 +1369,7 @@ pinnipedProxy:
     ## This config map must contain a ca.crt key with the CA cert content as the value.
     ##
     caCertificate: ""
-  ## @param pinnipedProxy.lifecycleHooks For the Pinniped Proxy container(s) to automate configuration before or after startup
+  ## @param pinnipedProxy.lifecycleHooks LifecycleHooks for the Pinniped Proxy container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param pinnipedProxy.command Override default container command (useful when using custom images)

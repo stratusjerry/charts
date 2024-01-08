@@ -194,7 +194,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `controller.updateStrategy.type`                               | Argo CD statefulset strategy type                                                                    | `RollingUpdate`  |
 | `controller.priorityClassName`                                 | Argo CD pods' priorityClassName                                                                      | `""`             |
 | `controller.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                       | `""`             |
-| `controller.lifecycleHooks`                                    | for the Argo CD container(s) to automate configuration before or after startup                       | `{}`             |
+| `controller.lifecycleHooks`                                    | LifecycleHooks for the Argo CD container(s) to automate configuration before or after startup        | `{}`             |
 | `controller.extraEnvVars`                                      | Array with extra environment variables to add to Argo CD nodes                                       | `[]`             |
 | `controller.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Argo CD nodes                               | `""`             |
 | `controller.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Argo CD nodes                                  | `""`             |
@@ -576,7 +576,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `server.updateStrategy.type`                               | Argo CD server statefulset strategy type                                                                                        | `RollingUpdate`          |
 | `server.priorityClassName`                                 | Argo CD server pods' priorityClassName                                                                                          | `""`                     |
 | `server.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                                                  | `""`                     |
-| `server.lifecycleHooks`                                    | for the Argo CD server container(s) to automate configuration before or after startup                                           | `{}`                     |
+| `server.lifecycleHooks`                                    | LifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup                            | `{}`                     |
 | `server.extraEnvVars`                                      | Array with extra environment variables to add to Argo CD server nodes                                                           | `[]`                     |
 | `server.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Argo CD server nodes                                                   | `""`                     |
 | `server.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Argo CD server nodes                                                      | `""`                     |
@@ -691,7 +691,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `repoServer.updateStrategy.type`                               | Argo CD repo server statefulset strategy type                                                        | `RollingUpdate`  |
 | `repoServer.priorityClassName`                                 | Argo CD repo server pods' priorityClassName                                                          | `""`             |
 | `repoServer.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                       | `""`             |
-| `repoServer.lifecycleHooks`                                    | for the Argo CD repo server container(s) to automate configuration before or after startup           | `{}`             |
+| `repoServer.lifecycleHooks`                                    | LifecycleHooks for the Argo CD repo server container(s) to automate configuration before or after startup           | `{}`             |
 | `repoServer.extraEnvVars`                                      | Array with extra environment variables to add to Argo CD repo server nodes                           | `[]`             |
 | `repoServer.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Argo CD repo server nodes                   | `""`             |
 | `repoServer.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Argo CD repo server nodes                      | `""`             |
@@ -805,7 +805,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dex.updateStrategy.type`                               | Dex statefulset strategy type                                                                       | `RollingUpdate`       |
 | `dex.priorityClassName`                                 | Dex pods' priorityClassName                                                                         | `""`                  |
 | `dex.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                      | `""`                  |
-| `dex.lifecycleHooks`                                    | for the Dex container(s) to automate configuration before or after startup                          | `{}`                  |
+| `dex.lifecycleHooks`                                    | LifecycleHooks for the Dex container(s) to automate configuration before or after startup           | `{}`                  |
 | `dex.extraEnvVars`                                      | Array with extra environment variables to add to Dex nodes                                          | `[]`                  |
 | `dex.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Dex nodes                                  | `""`                  |
 | `dex.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Dex nodes                                     | `""`                  |

@@ -672,7 +672,7 @@ master:
   ## @param master.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param master.lifecycleHooks for the master-elegible container(s) to automate configuration before or after startup
+  ## @param master.lifecycleHooks LifecycleHooks for the master-elegible container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param master.extraEnvVars Array with extra environment variables to add to master-elegible nodes
@@ -983,7 +983,7 @@ data:
   ## @param data.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param data.lifecycleHooks for the data container(s) to automate configuration before or after startup
+  ## @param data.lifecycleHooks LifecycleHooks for the data container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param data.extraEnvVars Array with extra environment variables to add to data nodes
@@ -1295,7 +1295,7 @@ coordinating:
   ## @param coordinating.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param coordinating.lifecycleHooks for the coordinating-only container(s) to automate configuration before or after startup
+  ## @param coordinating.lifecycleHooks LifecycleHooks for the coordinating-only container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param coordinating.extraEnvVars Array with extra environment variables to add to coordinating-only nodes
@@ -1576,7 +1576,7 @@ ingest:
   ## @param ingest.args Override default container args (useful when using custom images)
   ##
   args: []
-  ## @param ingest.lifecycleHooks for the ingest-only container(s) to automate configuration before or after startup
+  ## @param ingest.lifecycleHooks LifecycleHooks for the ingest-only container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param ingest.extraEnvVars Array with extra environment variables to add to ingest-only nodes

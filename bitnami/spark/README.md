@@ -139,7 +139,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `master.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `master.schedulerName`                                     | Name of the k8s scheduler (other than default) for master pods                                                           | `""`             |
 | `master.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `master.lifecycleHooks`                                    | for the master container(s) to automate configuration before or after startup                                            | `{}`             |
+| `master.lifecycleHooks`                                    | LifecycleHooks for the master container(s) to automate configuration before or after startup                             | `{}`             |
 | `master.extraVolumes`                                      | Optionally specify extra list of additional volumes for the master pod(s)                                                | `[]`             |
 | `master.extraVolumeMounts`                                 | Optionally specify extra list of additional volumeMounts for the master container(s)                                     | `[]`             |
 | `master.extraVolumeClaimTemplates`                         | Optionally specify extra list of volumesClaimTemplates for the master statefulset                                        | `[]`             |
@@ -218,7 +218,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `worker.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `worker.schedulerName`                                     | Name of the k8s scheduler (other than default) for worker pods                                                           | `""`             |
 | `worker.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `worker.lifecycleHooks`                                    | for the worker container(s) to automate configuration before or after startup                                            | `{}`             |
+| `worker.lifecycleHooks`                                    | LifecycleHooks for the worker container(s) to automate configuration before or after startup                             | `{}`             |
 | `worker.extraVolumes`                                      | Optionally specify extra list of additional volumes for the worker pod(s)                                                | `[]`             |
 | `worker.extraVolumeMounts`                                 | Optionally specify extra list of additional volumeMounts for the master container(s)                                     | `[]`             |
 | `worker.extraVolumeClaimTemplates`                         | Optionally specify extra list of volumesClaimTemplates for the worker statefulset                                        | `[]`             |

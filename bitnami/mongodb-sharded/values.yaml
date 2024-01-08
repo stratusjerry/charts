@@ -590,7 +590,7 @@ configsvr:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param configsvr.lifecycleHooks for the Config Server container(s) to automate configuration before or after startup
+  ## @param configsvr.lifecycleHooks LifecycleHooks for the Config Server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## Configure extra options for liveness probes
@@ -922,7 +922,7 @@ mongos:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param mongos.lifecycleHooks for the Mongo container(s) to automate configuration before or after startup
+  ## @param mongos.lifecycleHooks LifecycleHooks for the Mongo container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## Configure extra options for liveness probes

@@ -130,7 +130,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `{}`             |
 | `schedulerName`                                     | Name of the k8s scheduler (other than default) for Schema Registry pods                                                  | `""`             |
 | `terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `lifecycleHooks`                                    | for the Schema Registry container(s) to automate configuration before or after startup                                   | `{}`             |
+| `lifecycleHooks`                                    | LifecycleHooks for the Schema Registry container(s) to automate configuration before or after startup                    | `{}`             |
 | `podSecurityContext.enabled`                        | Enabled Controller pods' Security Context                                                                                | `true`           |
 | `podSecurityContext.fsGroup`                        | Set Controller pod's Security Context fsGroup                                                                            | `1001`           |
 | `podSecurityContext.sysctls`                        | sysctl settings of the Schema Registry pods                                                                              | `[]`             |

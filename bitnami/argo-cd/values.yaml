@@ -518,7 +518,7 @@ controller:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param controller.lifecycleHooks for the Argo CD container(s) to automate configuration before or after startup
+  ## @param controller.lifecycleHooks LifecycleHooks for the Argo CD container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param controller.extraEnvVars Array with extra environment variables to add to Argo CD nodes
@@ -2216,7 +2216,7 @@ server:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param server.lifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup
+  ## @param server.lifecycleHooks LifecycleHooks for the Argo CD server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param server.extraEnvVars Array with extra environment variables to add to Argo CD server nodes
@@ -2664,7 +2664,7 @@ repoServer:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param repoServer.lifecycleHooks for the Argo CD repo server container(s) to automate configuration before or after startup
+  ## @param repoServer.lifecycleHooks LifecycleHooks for the Argo CD repo server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param repoServer.extraEnvVars Array with extra environment variables to add to Argo CD repo server nodes
@@ -3117,7 +3117,7 @@ dex:
   ## ref: https://kubernetes.io/docs/concepts/containers/runtime-class/
   ##
   runtimeClassName: ""
-  ## @param dex.lifecycleHooks for the Dex container(s) to automate configuration before or after startup
+  ## @param dex.lifecycleHooks LifecycleHooks for the Dex container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dex.extraEnvVars Array with extra environment variables to add to Dex nodes

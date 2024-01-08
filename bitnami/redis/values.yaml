@@ -404,7 +404,7 @@ master:
   ##   - name: single-request-reopen
   ##
   dnsConfig: {}
-  ## @param master.lifecycleHooks for the Redis&reg; master container(s) to automate configuration before or after startup
+  ## @param master.lifecycleHooks LifecycleHooks for the Redis&reg; master container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param master.extraVolumes Optionally specify extra list of additional volumes for the Redis&reg; master pod(s)
@@ -855,7 +855,7 @@ replica:
   ##   - name: single-request-reopen
   ##
   dnsConfig: {}
-  ## @param replica.lifecycleHooks for the Redis&reg; replica container(s) to automate configuration before or after startup
+  ## @param replica.lifecycleHooks LifecycleHooks for the Redis&reg; replica container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param replica.extraVolumes Optionally specify extra list of additional volumes for the Redis&reg; replicas pod(s)
@@ -1293,7 +1293,7 @@ sentinel:
     capabilities:
       drop:
         - ALL
-  ## @param sentinel.lifecycleHooks for the Redis&reg; sentinel container(s) to automate configuration before or after startup
+  ## @param sentinel.lifecycleHooks LifecycleHooks for the Redis&reg; sentinel container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param sentinel.extraVolumes Optionally specify extra list of additional volumes for the Redis&reg; Sentinel

@@ -86,7 +86,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `image.debug`        | Enable phpmyadmin image debug mode                                                                         | `false`                      |
 | `command`            | Override default container command (useful when using custom images)                                       | `[]`                         |
 | `args`               | Override default container args (useful when using custom images)                                          | `[]`                         |
-| `lifecycleHooks`     | for the phpmyadmin container(s) to automate configuration before or after startup                          | `{}`                         |
+| `lifecycleHooks`     | LifecycleHooks for the phpmyadmin container(s) to automate configuration before or after startup           | `{}`                         |
 | `extraEnvVars`       | Extra environment variables to be set on PhpMyAdmin container                                              | `[]`                         |
 | `extraEnvVarsCM`     | Name of a existing ConfigMap containing extra env vars                                                     | `""`                         |
 | `extraEnvVarsSecret` | Name of a existing Secret containing extra env vars                                                        | `""`                         |

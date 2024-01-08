@@ -436,7 +436,7 @@ dataPlane:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param dataPlane.lifecycleHooks for the APISIX container(s) to automate configuration before or after startup
+  ## @param dataPlane.lifecycleHooks LifecycleHooks for the APISIX container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dataPlane.extraEnvVars Array with extra environment variables to add to APISIX nodes
@@ -1157,7 +1157,7 @@ controlPlane:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param controlPlane.lifecycleHooks for the APISIX container(s) to automate configuration before or after startup
+  ## @param controlPlane.lifecycleHooks LifecycleHooks for the APISIX container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param controlPlane.extraEnvVars Array with extra environment variables to add to APISIX nodes
@@ -1946,7 +1946,7 @@ dashboard:
   ##
   args: []
 
-  ## @param dashboard.lifecycleHooks for the Dashboard container(s) to automate configuration before or after startup
+  ## @param dashboard.lifecycleHooks LifecycleHooks for the Dashboard container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param dashboard.extraEnvVars Array with extra environment variables to add to Dashboard nodes
@@ -2422,7 +2422,7 @@ ingressController:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param ingressController.lifecycleHooks for the APISIX Ingress Controller container(s) to automate configuration before or after startup
+  ## @param ingressController.lifecycleHooks LifecycleHooks for the APISIX Ingress Controller container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param ingressController.extraEnvVars Array with extra environment variables to add to APISIX Ingress Controller nodes

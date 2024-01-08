@@ -299,7 +299,7 @@ command: []
 ## @param args Custom args for the custom command
 ##
 args: []
-## @param lifecycleHooks for the EJBCA container(s) to automate configuration before or after startup
+## @param lifecycleHooks LifecycleHooks for the EJBCA container(s) to automate configuration before or after startup
 ##
 lifecycleHooks: {}
 ## EJBCA containers' resource requests and limits

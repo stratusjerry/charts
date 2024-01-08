@@ -346,7 +346,7 @@ server:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param server.lifecycleHooks for the Parse container(s) to automate configuration before or after startup
+  ## @param server.lifecycleHooks LifecycleHooks for the Parse container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## Kubernetes service for Parse Server Deployment
@@ -634,7 +634,7 @@ dashboard:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param dashboard.lifecycleHooks for the Parse container(s) to automate configuration before or after startup
+  ## @param dashboard.lifecycleHooks LifecycleHooks for the Parse container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
 

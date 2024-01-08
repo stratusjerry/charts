@@ -281,7 +281,7 @@ master:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param master.lifecycleHooks for the master container(s) to automate configuration before or after startup
+  ## @param master.lifecycleHooks LifecycleHooks for the master container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param master.extraVolumes Optionally specify extra list of additional volumes for the master pod(s)
@@ -571,7 +571,7 @@ worker:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param worker.lifecycleHooks for the worker container(s) to automate configuration before or after startup
+  ## @param worker.lifecycleHooks LifecycleHooks for the worker container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param worker.extraVolumes Optionally specify extra list of additional volumes for the worker pod(s)

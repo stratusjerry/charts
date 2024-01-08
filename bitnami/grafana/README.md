@@ -278,7 +278,7 @@ This solution allows to easily deploy multiple Grafana instances compared to the
 | `grafana.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                     | `{}`             |
 | `grafana.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                    | `{}`             |
 | `grafana.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                      | `{}`             |
-| `grafana.lifecycleHooks`                                    | for the Grafana container(s) to automate configuration before or after startup                          | `{}`             |
+| `grafana.lifecycleHooks`                                    | LifecycleHooks for the Grafana container(s) to automate configuration before or after startup           | `{}`             |
 | `grafana.sidecars`                                          | Attach additional sidecar containers to the Grafana pod                                                 | `[]`             |
 | `grafana.initContainers`                                    | Add additional init containers to the Grafana pod(s)                                                    | `[]`             |
 | `grafana.extraVolumes`                                      | Additional volumes for the Grafana pod                                                                  | `[]`             |

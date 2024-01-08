@@ -193,7 +193,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dataCoord.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                  | `false`          |
 | `dataCoord.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                         | `["ALL"]`        |
 | `dataCoord.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                           | `RuntimeDefault` |
-| `dataCoord.lifecycleHooks`                                    | for the data coordinator container(s) to automate configuration before or after startup                    | `{}`             |
+| `dataCoord.lifecycleHooks`                                    | LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup     | `{}`             |
 | `dataCoord.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                             | `""`             |
 | `dataCoord.hostAliases`                                       | data coordinator pods host aliases                                                                         | `[]`             |
 | `dataCoord.podLabels`                                         | Extra labels for data coordinator pods                                                                     | `{}`             |
@@ -333,7 +333,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `rootCoord.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                  | `false`          |
 | `rootCoord.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                         | `["ALL"]`        |
 | `rootCoord.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                           | `RuntimeDefault` |
-| `rootCoord.lifecycleHooks`                                    | for the data coordinator container(s) to automate configuration before or after startup                    | `{}`             |
+| `rootCoord.lifecycleHooks`                                    | LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup     | `{}`             |
 | `rootCoord.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                             | `""`             |
 | `rootCoord.hostAliases`                                       | data coordinator pods host aliases                                                                         | `[]`             |
 | `rootCoord.podLabels`                                         | Extra labels for data coordinator pods                                                                     | `{}`             |
@@ -473,7 +473,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryCoord.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                  | `false`          |
 | `queryCoord.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                         | `["ALL"]`        |
 | `queryCoord.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                           | `RuntimeDefault` |
-| `queryCoord.lifecycleHooks`                                    | for the data coordinator container(s) to automate configuration before or after startup                    | `{}`             |
+| `queryCoord.lifecycleHooks`                                    | LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup     | `{}`             |
 | `queryCoord.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                             | `""`             |
 | `queryCoord.hostAliases`                                       | data coordinator pods host aliases                                                                         | `[]`             |
 | `queryCoord.podLabels`                                         | Extra labels for data coordinator pods                                                                     | `{}`             |
@@ -613,7 +613,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `indexCoord.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                                  | `false`          |
 | `indexCoord.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                         | `["ALL"]`        |
 | `indexCoord.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                           | `RuntimeDefault` |
-| `indexCoord.lifecycleHooks`                                    | for the data coordinator container(s) to automate configuration before or after startup                    | `{}`             |
+| `indexCoord.lifecycleHooks`                                    | LifecycleHooks for the data coordinator container(s) to automate configuration before or after startup     | `{}`             |
 | `indexCoord.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                             | `""`             |
 | `indexCoord.hostAliases`                                       | data coordinator pods host aliases                                                                         | `[]`             |
 | `indexCoord.podLabels`                                         | Extra labels for data coordinator pods                                                                     | `{}`             |
@@ -753,7 +753,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dataNode.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                           | `false`          |
 | `dataNode.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                  | `["ALL"]`        |
 | `dataNode.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                    | `RuntimeDefault` |
-| `dataNode.lifecycleHooks`                                    | for the data node container(s) to automate configuration before or after startup                    | `{}`             |
+| `dataNode.lifecycleHooks`                                    | LifecycleHooks for the data node container(s) to automate configuration before or after startup     | `{}`             |
 | `dataNode.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                      | `""`             |
 | `dataNode.hostAliases`                                       | data node pods host aliases                                                                         | `[]`             |
 | `dataNode.podLabels`                                         | Extra labels for data node pods                                                                     | `{}`             |
@@ -893,7 +893,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `queryNode.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                           | `false`          |
 | `queryNode.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                  | `["ALL"]`        |
 | `queryNode.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                    | `RuntimeDefault` |
-| `queryNode.lifecycleHooks`                                    | for the data node container(s) to automate configuration before or after startup                    | `{}`             |
+| `queryNode.lifecycleHooks`                                    | LifecycleHooks for the data node container(s) to automate configuration before or after startup     | `{}`             |
 | `queryNode.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                      | `""`             |
 | `queryNode.hostAliases`                                       | data node pods host aliases                                                                         | `[]`             |
 | `queryNode.podLabels`                                         | Extra labels for data node pods                                                                     | `{}`             |
@@ -1033,7 +1033,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `indexNode.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                           | `false`          |
 | `indexNode.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                  | `["ALL"]`        |
 | `indexNode.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                    | `RuntimeDefault` |
-| `indexNode.lifecycleHooks`                                    | for the data node container(s) to automate configuration before or after startup                    | `{}`             |
+| `indexNode.lifecycleHooks`                                    | LifecycleHooks for the data node container(s) to automate configuration before or after startup     | `{}`             |
 | `indexNode.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                      | `""`             |
 | `indexNode.hostAliases`                                       | data node pods host aliases                                                                         | `[]`             |
 | `indexNode.podLabels`                                         | Extra labels for data node pods                                                                     | `{}`             |
@@ -1185,7 +1185,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `proxy.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                       | `false`          |
 | `proxy.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                              | `["ALL"]`        |
 | `proxy.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                | `RuntimeDefault` |
-| `proxy.lifecycleHooks`                                    | for the proxy container(s) to automate configuration before or after startup                    | `{}`             |
+| `proxy.lifecycleHooks`                                    | LifecycleHooks for the proxy container(s) to automate configuration before or after startup     | `{}`             |
 | `proxy.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                  | `""`             |
 | `proxy.hostAliases`                                       | proxy pods host aliases                                                                         | `[]`             |
 | `proxy.podLabels`                                         | Extra labels for proxy pods                                                                     | `{}`             |
@@ -1326,7 +1326,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `attu.containerSecurityContext.allowPrivilegeEscalation` | Set container's Security Context allowPrivilegeEscalation                                            | `false`                |
 | `attu.containerSecurityContext.capabilities.drop`        | List of capabilities to be dropped                                                                   | `["ALL"]`              |
 | `attu.containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                     | `RuntimeDefault`       |
-| `attu.lifecycleHooks`                                    | for the attu container(s) to automate configuration before or after startup                          | `{}`                   |
+| `attu.lifecycleHooks`                                    | LifecycleHooks for the attu container(s) to automate configuration before or after startup           | `{}`                   |
 | `attu.runtimeClassName`                                  | Name of the runtime class to be used by pod(s)                                                       | `""`                   |
 | `attu.hostAliases`                                       | attu pods host aliases                                                                               | `[]`                   |
 | `attu.podLabels`                                         | Extra labels for attu pods                                                                           | `{}`                   |

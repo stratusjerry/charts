@@ -102,7 +102,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `smtpPassword`       | SMTP password                                                                                                                                      | `""`                        |
 | `command`            | Override default container command (useful when using custom images)                                                                               | `[]`                        |
 | `args`               | Override default container args (useful when using custom images)                                                                                  | `[]`                        |
-| `lifecycleHooks`     | for the Mediawiki container(s) to automate configuration before or after startup                                                                   | `{}`                        |
+| `lifecycleHooks`     | LifecycleHooks for the Mediawiki container(s) to automate configuration before or after startup                                                    | `{}`                        |
 | `extraEnvVars`       | Extra environment variables to be set on Mediawki container                                                                                        | `[]`                        |
 | `extraEnvVarsCM`     | Name of existing ConfigMap containing extra env vars                                                                                               | `""`                        |
 | `extraEnvVarsSecret` | Name of existing Secret containing extra env vars                                                                                                  | `""`                        |

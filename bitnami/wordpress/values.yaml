@@ -526,7 +526,7 @@ customReadinessProbe: {}
 ## @param customStartupProbe Custom startupProbe that overrides the default one
 ##
 customStartupProbe: {}
-## @param lifecycleHooks for the WordPress container(s) to automate configuration before or after startup
+## @param lifecycleHooks LifecycleHooks for the WordPress container(s) to automate configuration before or after startup
 ##
 lifecycleHooks: {}
 

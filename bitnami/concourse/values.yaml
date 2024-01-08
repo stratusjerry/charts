@@ -532,7 +532,7 @@ web:
   updateStrategy:
     type: RollingUpdate
     rollingUpdate: {}
-  ## @param web.lifecycleHooks lifecycleHooks for the Concourse web container(s)
+  ## @param web.lifecycleHooks LifecycleHooks for the Concourse web container(s)
   ##
   lifecycleHooks: {}
   ## @param web.extraVolumes Optionally specify extra list of additional volumeMounts for the Concourse web container(s)
@@ -832,7 +832,7 @@ worker:
   updateStrategy:
     type: RollingUpdate
     rollingUpdate: {}
-  ## @param worker.lifecycleHooks for the Concourse worker container(s) to automate configuration before or after startup
+  ## @param worker.lifecycleHooks LifecycleHooks for the Concourse worker container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param worker.extraEnvVars Array with extra environment variables to add to Concourse worker nodes

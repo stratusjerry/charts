@@ -496,7 +496,7 @@ grafana:
   ## @param grafana.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param grafana.lifecycleHooks for the Grafana container(s) to automate configuration before or after startup
+  ## @param grafana.lifecycleHooks LifecycleHooks for the Grafana container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param grafana.sidecars Attach additional sidecar containers to the Grafana pod

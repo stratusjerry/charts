@@ -150,7 +150,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`                      |
 | `schedulerName`                                     | Name of the k8s scheduler (other than default) for Pytorch pods                                                          | `""`                      |
 | `terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`                      |
-| `lifecycleHooks`                                    | for the Pytorch container(s) to automate configuration before or after startup                                           | `{}`                      |
+| `lifecycleHooks`                                    | LifecycleHooks for the Pytorch container(s) to automate configuration before or after startup                            | `{}`                      |
 | `extraEnvVars`                                      | Array with extra environment variables to add to Pytorch nodes                                                           | `[]`                      |
 | `extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Pytorch nodes                                                   | `""`                      |
 | `extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Pytorch nodes                                                      | `""`                      |

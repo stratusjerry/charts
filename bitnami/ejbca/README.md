@@ -129,7 +129,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for EJBCA nodes                                           | `""`                    |
 | `command`                                           | Custom command to override image cmd                                                                        | `[]`                    |
 | `args`                                              | Custom args for the custom command                                                                          | `[]`                    |
-| `lifecycleHooks`                                    | for the EJBCA container(s) to automate configuration before or after startup                                | `{}`                    |
+| `lifecycleHooks`                                    | LifecycleHooks for the EJBCA container(s) to automate configuration before or after startup                 | `{}`                    |
 | `resources.requests`                                | The requested resources for the init container                                                              | `{}`                    |
 | `resources.limits`                                  | The resources limits for the init container                                                                 | `{}`                    |
 | `resources.limits`                                  | The resources limits for Ejbca containers                                                                   | `{}`                    |

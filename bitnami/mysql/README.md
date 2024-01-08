@@ -113,7 +113,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `primary.name`                                              | Name of the primary database (eg primary, master, leader, ...)                                                  | `primary`           |
 | `primary.command`                                           | Override default container command on MySQL Primary container(s) (useful when using custom images)              | `[]`                |
 | `primary.args`                                              | Override default container args on MySQL Primary container(s) (useful when using custom images)                 | `[]`                |
-| `primary.lifecycleHooks`                                    | for the MySQL Primary container(s) to automate configuration before or after startup                            | `{}`                |
+| `primary.lifecycleHooks`                                    | LifecycleHooks for the MySQL Primary container(s) to automate configuration before or after startup             | `{}`                |
 | `primary.hostAliases`                                       | Deployment pod host aliases                                                                                     | `[]`                |
 | `primary.configuration`                                     | Configure MySQL Primary with a custom my.cnf file                                                               | `""`                |
 | `primary.existingConfigmap`                                 | Name of existing ConfigMap with MySQL Primary configuration.                                                    | `""`                |
@@ -211,7 +211,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `secondary.hostAliases`                                       | Deployment pod host aliases                                                                                         | `[]`                |
 | `secondary.command`                                           | Override default container command on MySQL Secondary container(s) (useful when using custom images)                | `[]`                |
 | `secondary.args`                                              | Override default container args on MySQL Secondary container(s) (useful when using custom images)                   | `[]`                |
-| `secondary.lifecycleHooks`                                    | for the MySQL Secondary container(s) to automate configuration before or after startup                              | `{}`                |
+| `secondary.lifecycleHooks`                                    | LifecycleHooks for the MySQL Secondary container(s) to automate configuration before or after startup               | `{}`                |
 | `secondary.configuration`                                     | Configure MySQL Secondary with a custom my.cnf file                                                                 | `""`                |
 | `secondary.existingConfigmap`                                 | Name of existing ConfigMap with MySQL Secondary configuration.                                                      | `""`                |
 | `secondary.updateStrategy.type`                               | Update strategy type for the MySQL secondary statefulset                                                            | `RollingUpdate`     |

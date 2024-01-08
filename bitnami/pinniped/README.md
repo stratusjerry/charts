@@ -150,7 +150,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `concierge.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `{}`             |
 | `concierge.schedulerName`                                     | Name of the k8s scheduler (other than default) for Concierge pods                                                        | `""`             |
 | `concierge.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `concierge.lifecycleHooks`                                    | for the Concierge container(s) to automate configuration before or after startup                                         | `{}`             |
+| `concierge.lifecycleHooks`                                    | LifecycleHooks for the Concierge container(s) to automate configuration before or after startup                          | `{}`             |
 | `concierge.extraEnvVars`                                      | Array with extra environment variables to add to Concierge nodes                                                         | `[]`             |
 | `concierge.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Concierge nodes                                                 | `""`             |
 | `concierge.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Concierge nodes                                                    | `""`             |
@@ -255,7 +255,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `supervisor.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `{}`             |
 | `supervisor.schedulerName`                                     | Name of the k8s scheduler (other than default) for Supervisor pods                                                       | `""`             |
 | `supervisor.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `supervisor.lifecycleHooks`                                    | for the Supervisor container(s) to automate configuration before or after startup                                        | `{}`             |
+| `supervisor.lifecycleHooks`                                    | LifecycleHooks for the Supervisor container(s) to automate configuration before or after startup                         | `{}`             |
 | `supervisor.extraEnvVars`                                      | Array with extra environment variables to add to Supervisor nodes                                                        | `[]`             |
 | `supervisor.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Supervisor nodes                                                | `""`             |
 | `supervisor.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Supervisor nodes                                                   | `""`             |

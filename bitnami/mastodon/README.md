@@ -190,7 +190,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `web.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `web.schedulerName`                                     | Name of the k8s scheduler (other than default) for Mastodon web pods                                                     | `""`             |
 | `web.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `web.lifecycleHooks`                                    | for the Mastodon web container(s) to automate configuration before or after startup                                      | `{}`             |
+| `web.lifecycleHooks`                                    | LifecycleHooks for the Mastodon web container(s) to automate configuration before or after startup                       | `{}`             |
 | `web.extraEnvVars`                                      | Array with extra environment variables to add to Mastodon web nodes                                                      | `[]`             |
 | `web.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Mastodon web nodes                                              | `""`             |
 | `web.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Mastodon web nodes                                                 | `""`             |
@@ -271,7 +271,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `sidekiq.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `sidekiq.schedulerName`                                     | Name of the k8s scheduler (other than default) for Mastodon sidekiq pods                                                 | `""`             |
 | `sidekiq.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `sidekiq.lifecycleHooks`                                    | for the Mastodon sidekiq container(s) to automate configuration before or after startup                                  | `{}`             |
+| `sidekiq.lifecycleHooks`                                    | LifecycleHooks for the Mastodon sidekiq container(s) to automate configuration before or after startup                   | `{}`             |
 | `sidekiq.extraEnvVars`                                      | Array with extra environment variables to add to Mastodon sidekiq nodes                                                  | `[]`             |
 | `sidekiq.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Mastodon sidekiq nodes                                          | `""`             |
 | `sidekiq.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Mastodon sidekiq nodes                                             | `""`             |
@@ -337,7 +337,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `streaming.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `streaming.schedulerName`                                     | Name of the k8s scheduler (other than default) for Mastodon streaming pods                                               | `""`             |
 | `streaming.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `streaming.lifecycleHooks`                                    | for the Mastodon streaming container(s) to automate configuration before or after startup                                | `{}`             |
+| `streaming.lifecycleHooks`                                    | LifecycleHooks for the Mastodon streaming container(s) to automate configuration before or after startup                 | `{}`             |
 | `streaming.extraEnvVars`                                      | Array with extra environment variables to add to Mastodon streaming nodes                                                | `[]`             |
 | `streaming.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Mastodon streaming nodes                                        | `""`             |
 | `streaming.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Mastodon streaming nodes                                           | `""`             |

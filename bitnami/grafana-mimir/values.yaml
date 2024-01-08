@@ -458,7 +458,7 @@ alertmanager:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param alertmanager.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param alertmanager.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param alertmanager.hostAliases ingester pods host aliases
@@ -817,7 +817,7 @@ compactor:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param compactor.lifecycleHooks for the compactor container(s) to automate configuration before or after startup
+  ## @param compactor.lifecycleHooks LifecycleHooks for the compactor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param compactor.hostAliases compactor pods host aliases
@@ -1150,7 +1150,7 @@ distributor:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param distributor.lifecycleHooks for the distributor container(s) to automate configuration before or after startup
+  ## @param distributor.lifecycleHooks LifecycleHooks for the distributor container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param distributor.hostAliases distributor pods host aliases
@@ -1498,7 +1498,7 @@ gateway:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param gateway.lifecycleHooks for the gateway container(s) to automate configuration before or after startup
+  ## @param gateway.lifecycleHooks LifecycleHooks for the gateway container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param gateway.hostAliases gateway pods host aliases
@@ -1883,7 +1883,7 @@ ingester:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param ingester.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param ingester.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param ingester.hostAliases ingester pods host aliases
@@ -2225,7 +2225,7 @@ overridesExporter:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param overridesExporter.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param overridesExporter.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param overridesExporter.hostAliases ingester pods host aliases
@@ -2527,7 +2527,7 @@ querier:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param querier.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param querier.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param querier.hostAliases ingester pods host aliases
@@ -2829,7 +2829,7 @@ queryFrontend:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param queryFrontend.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param queryFrontend.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryFrontend.hostAliases ingester pods host aliases
@@ -3134,7 +3134,7 @@ queryScheduler:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param queryScheduler.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param queryScheduler.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param queryScheduler.hostAliases ingester pods host aliases
@@ -3440,7 +3440,7 @@ storeGateway:
       drop: ["ALL"]
     seccompProfile:
       type: "RuntimeDefault"
-  ## @param storeGateway.lifecycleHooks for the ingester container(s) to automate configuration before or after startup
+  ## @param storeGateway.lifecycleHooks LifecycleHooks for the ingester container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param storeGateway.hostAliases ingester pods host aliases
@@ -3751,7 +3751,7 @@ ruler:
   ## @param ruler.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param ruler.lifecycleHooks for the ruler container(s) to automate configuration before or after startup
+  ## @param ruler.lifecycleHooks LifecycleHooks for the ruler container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## ruler resource requests and limits

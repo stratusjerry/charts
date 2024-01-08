@@ -146,7 +146,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `client.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `client.schedulerName`                                     | Name of the k8s scheduler (other than default) for Appsmith client pods                                                  | `""`             |
 | `client.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `client.lifecycleHooks`                                    | for the Appsmith client container(s) to automate configuration before or after startup                                   | `{}`             |
+| `client.lifecycleHooks`                                    | LifecycleHooks for the Appsmith client container(s) to automate configuration before or after startup                    | `{}`             |
 | `client.extraEnvVars`                                      | Array with extra environment variables to add to Appsmith client nodes                                                   | `[]`             |
 | `client.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Appsmith client nodes                                           | `""`             |
 | `client.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Appsmith client nodes                                              | `""`             |
@@ -251,7 +251,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `backend.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`                  |
 | `backend.schedulerName`                                     | Name of the k8s scheduler (other than default) for Appsmith backend pods                                                 | `""`                  |
 | `backend.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`                  |
-| `backend.lifecycleHooks`                                    | for the Appsmith backend container(s) to automate configuration before or after startup                                  | `{}`                  |
+| `backend.lifecycleHooks`                                    | LifecycleHooks for the Appsmith backend container(s) to automate configuration before or after startup                   | `{}`                  |
 | `backend.extraEnvVars`                                      | Array with extra environment variables to add to Appsmith backend nodes                                                  | `[]`                  |
 | `backend.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Appsmith backend nodes                                          | `""`                  |
 | `backend.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Appsmith backend nodes                                             | `""`                  |
@@ -349,7 +349,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `rts.topologySpreadConstraints`                         | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template | `[]`             |
 | `rts.schedulerName`                                     | Name of the k8s scheduler (other than default) for Appsmith rts pods                                                     | `""`             |
 | `rts.terminationGracePeriodSeconds`                     | Seconds Redmine pod needs to terminate gracefully                                                                        | `""`             |
-| `rts.lifecycleHooks`                                    | for the Appsmith rts container(s) to automate configuration before or after startup                                      | `{}`             |
+| `rts.lifecycleHooks`                                    | LifecycleHooks for the Appsmith rts container(s) to automate configuration before or after startup                       | `{}`             |
 | `rts.extraEnvVars`                                      | Array with extra environment variables to add to Appsmith rts nodes                                                      | `[]`             |
 | `rts.extraEnvVarsCM`                                    | Name of existing ConfigMap containing extra env vars for Appsmith rts nodes                                              | `""`             |
 | `rts.extraEnvVarsSecret`                                | Name of existing Secret containing extra env vars for Appsmith rts nodes                                                 | `""`             |

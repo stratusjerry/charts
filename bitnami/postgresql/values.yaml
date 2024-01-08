@@ -434,7 +434,7 @@ primary:
   ## @param primary.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param primary.lifecycleHooks for the PostgreSQL Primary container to automate configuration before or after startup
+  ## @param primary.lifecycleHooks LifecycleHooks for the PostgreSQL Primary container to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## PostgreSQL Primary resource requests and limits
@@ -798,7 +798,7 @@ readReplicas:
   ## @param readReplicas.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param readReplicas.lifecycleHooks for the PostgreSQL read only container to automate configuration before or after startup
+  ## @param readReplicas.lifecycleHooks LifecycleHooks for the PostgreSQL read only container to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## PostgreSQL read only resource requests and limits

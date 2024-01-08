@@ -130,7 +130,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `containerSecurityContext.seccompProfile.type`      | Set container's Security Context seccomp profile                                                                         | `RuntimeDefault`         |
 | `command`                                           | Override default container command (useful when using custom images)                                                     | `[]`                     |
 | `args`                                              | Override default container args (useful when using custom images)                                                        | `[]`                     |
-| `lifecycleHooks`                                    | for the Apache server container(s) to automate configuration before or after startup                                     | `{}`                     |
+| `lifecycleHooks`                                    | LifecycleHooks for the Apache server container(s) to automate configuration before or after startup                      | `{}`                     |
 | `resources.limits`                                  | The resources limits for the container                                                                                   | `{}`                     |
 | `resources.requests`                                | The requested resources for the container                                                                                | `{}`                     |
 | `startupProbe.enabled`                              | Enable startupProbe                                                                                                      | `false`                  |

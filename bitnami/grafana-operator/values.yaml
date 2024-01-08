@@ -67,7 +67,7 @@ operator:
   ## @param operator.schedulerName Alternative scheduler
   ##
   schedulerName: ""
-  ## @param operator.lifecycleHooks for the grafana-operator container to automate configuration before or after startup
+  ## @param operator.lifecycleHooks LifecycleHooks for the grafana-operator container to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param operator.replicaCount Number of grafana-operator Pod replicas

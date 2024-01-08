@@ -323,7 +323,7 @@ server:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param server.lifecycleHooks for the Vault Server container(s) to automate configuration before or after startup
+  ## @param server.lifecycleHooks LifecycleHooks for the Vault Server container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param server.extraEnvVars Array with extra environment variables to add to Vault Server nodes
@@ -1397,7 +1397,7 @@ injector:
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
-  ## @param injector.lifecycleHooks for the Vault Kubernetes Injector container(s) to automate configuration before or after startup
+  ## @param injector.lifecycleHooks LifecycleHooks for the Vault Kubernetes Injector container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param injector.extraEnvVars Array with extra environment variables to add to Vault Kubernetes Injector nodes

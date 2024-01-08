@@ -358,7 +358,7 @@ discourse:
     enabled: false
     runAsUser: 0
     runAsNonRoot: false
-  ## @param discourse.lifecycleHooks for the Discourse container(s) to automate configuration before or after startup
+  ## @param discourse.lifecycleHooks LifecycleHooks for the Discourse container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param discourse.extraVolumeMounts Optionally specify extra list of additional volumeMounts for the Discourse pods
@@ -493,7 +493,7 @@ sidekiq:
     enabled: false
     runAsUser: 0
     runAsNonRoot: false
-  ## @param sidekiq.lifecycleHooks for the Sidekiq container(s) to automate configuration before or after startup
+  ## @param sidekiq.lifecycleHooks LifecycleHooks for the Sidekiq container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param sidekiq.extraVolumeMounts Optionally specify extra list of additional volumeMounts for the Sidekiq pods
