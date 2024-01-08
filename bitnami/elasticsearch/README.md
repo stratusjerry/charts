@@ -168,12 +168,12 @@ helm delete --purge my-release
 | `ingress.secrets`                  | Custom TLS certificates as secrets                                                                                               | `[]`                     |
 | `ingress.extraRules`               | Additional rules to be covered with this ingress record                                                                          | `[]`                     |
 
-### Master-elegible nodes parameters
+### Master-eligible nodes parameters
 
 | Name                                                 | Description                                                                                                                                        | Value               |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| `master.masterOnly`                                  | Deploy the Elasticsearch master-elegible nodes as master-only nodes. Recommended for high-demand deployments.                                      | `true`              |
-| `master.replicaCount`                                | Number of master-elegible replicas to deploy                                                                                                       | `2`                 |
+| `master.masterOnly`                                  | Deploy the Elasticsearch master-eligible nodes as master-only nodes. Recommended for high-demand deployments.                                      | `true`              |
+| `master.replicaCount`                                | Number of master-eligible replicas to deploy                                                                                                       | `2`                 |
 | `master.extraRoles`                                  | Append extra roles to the node role                                                                                                                | `[]`                |
 | `master.pdb.create`                                  | Enable/disable a Pod Disruption Budget creation                                                                                                    | `false`             |
 | `master.pdb.minAvailable`                            | Minimum number/percentage of pods that should remain scheduled                                                                                     | `1`                 |
@@ -182,28 +182,28 @@ helm delete --purge my-release
 | `master.fullnameOverride`                            | String to fully override elasticsearch.master.fullname                                                                                             | `""`                |
 | `master.servicenameOverride`                         | String to fully override elasticsearch.master.servicename                                                                                          | `""`                |
 | `master.annotations`                                 | Annotations for the master statefulset                                                                                                             | `{}`                |
-| `master.updateStrategy.type`                         | Master-elegible nodes statefulset stategy type                                                                                                     | `RollingUpdate`     |
+| `master.updateStrategy.type`                         | Master-eligible nodes statefulset strategy type                                                                                                    | `RollingUpdate`     |
 | `master.resources.limits`                            | The resources limits for elasticsearch containers                                                                                                  | `{}`                |
 | `master.resources.requests`                          | The requested resources for elasticsearch containers                                                                                               | `{}`                |
 | `master.heapSize`                                    | Elasticsearch master-eligible node heap size.                                                                                                      | `128m`              |
-| `master.podSecurityContext.enabled`                  | Enabled master-elegible pods' Security Context                                                                                                     | `true`              |
-| `master.podSecurityContext.fsGroup`                  | Set master-elegible pod's Security Context fsGroup                                                                                                 | `1001`              |
-| `master.containerSecurityContext.enabled`            | Enabled master-elegible containers' Security Context                                                                                               | `true`              |
-| `master.containerSecurityContext.runAsUser`          | Set master-elegible containers' Security Context runAsUser                                                                                         | `1001`              |
-| `master.containerSecurityContext.runAsNonRoot`       | Set master-elegible containers' Security Context runAsNonRoot                                                                                      | `true`              |
-| `master.hostAliases`                                 | master-elegible pods host aliases                                                                                                                  | `[]`                |
-| `master.podLabels`                                   | Extra labels for master-elegible pods                                                                                                              | `{}`                |
-| `master.podAnnotations`                              | Annotations for master-elegible pods                                                                                                               | `{}`                |
+| `master.podSecurityContext.enabled`                  | Enabled master-eligible pods' Security Context                                                                                                     | `true`              |
+| `master.podSecurityContext.fsGroup`                  | Set master-eligible pod's Security Context fsGroup                                                                                                 | `1001`              |
+| `master.containerSecurityContext.enabled`            | Enabled master-eligible containers' Security Context                                                                                               | `true`              |
+| `master.containerSecurityContext.runAsUser`          | Set master-eligible containers' Security Context runAsUser                                                                                         | `1001`              |
+| `master.containerSecurityContext.runAsNonRoot`       | Set master-eligible containers' Security Context runAsNonRoot                                                                                      | `true`              |
+| `master.hostAliases`                                 | master-eligible pods host aliases                                                                                                                  | `[]`                |
+| `master.podLabels`                                   | Extra labels for master-eligible pods                                                                                                              | `{}`                |
+| `master.podAnnotations`                              | Annotations for master-eligible pods                                                                                                               | `{}`                |
 | `master.podAffinityPreset`                           | Pod affinity preset. Ignored if `master.affinity` is set. Allowed values: `soft` or `hard`                                                         | `""`                |
 | `master.podAntiAffinityPreset`                       | Pod anti-affinity preset. Ignored if `master.affinity` is set. Allowed values: `soft` or `hard`                                                    | `""`                |
 | `master.nodeAffinityPreset.type`                     | Node affinity preset type. Ignored if `master.affinity` is set. Allowed values: `soft` or `hard`                                                   | `""`                |
 | `master.nodeAffinityPreset.key`                      | Node label key to match. Ignored if `master.affinity` is set                                                                                       | `""`                |
 | `master.nodeAffinityPreset.values`                   | Node label values to match. Ignored if `master.affinity` is set                                                                                    | `[]`                |
-| `master.affinity`                                    | Affinity for master-elegible pods assignment                                                                                                       | `{}`                |
-| `master.nodeSelector`                                | Node labels for master-elegible pods assignment                                                                                                    | `{}`                |
-| `master.tolerations`                                 | Tolerations for master-elegible pods assignment                                                                                                    | `[]`                |
-| `master.priorityClassName`                           | master-elegible pods' priorityClassName                                                                                                            | `""`                |
-| `master.schedulerName`                               | Name of the k8s scheduler (other than default) for master-elegible pods                                                                            | `""`                |
+| `master.affinity`                                    | Affinity for master-eligible pods assignment                                                                                                       | `{}`                |
+| `master.nodeSelector`                                | Node labels for master-eligible pods assignment                                                                                                    | `{}`                |
+| `master.tolerations`                                 | Tolerations for master-eligible pods assignment                                                                                                    | `[]`                |
+| `master.priorityClassName`                           | master-eligible pods' priorityClassName                                                                                                            | `""`                |
+| `master.schedulerName`                               | Name of the k8s scheduler (other than default) for master-eligible pods                                                                            | `""`                |
 | `master.terminationGracePeriodSeconds`               | In seconds, time the given to the Elasticsearch Master pod needs to terminate gracefully                                                           | `""`                |
 | `master.topologySpreadConstraints`                   | Topology Spread Constraints for pod assignment spread across your cluster among failure-domains. Evaluated as a template                           | `[]`                |
 | `master.podManagementPolicy`                         | podManagementPolicy to manage scaling operation of Elasticsearch master pods                                                                       | `Parallel`          |
@@ -230,14 +230,14 @@ helm delete --purge my-release
 | `master.customReadinessProbe`                        | Override default readiness probe                                                                                                                   | `{}`                |
 | `master.command`                                     | Override default container command (useful when using custom images)                                                                               | `[]`                |
 | `master.args`                                        | Override default container args (useful when using custom images)                                                                                  | `[]`                |
-| `master.lifecycleHooks`                              | for the master-elegible container(s) to automate configuration before or after startup                                                             | `{}`                |
-| `master.extraEnvVars`                                | Array with extra environment variables to add to master-elegible nodes                                                                             | `[]`                |
-| `master.extraEnvVarsCM`                              | Name of existing ConfigMap containing extra env vars for master-elegible nodes                                                                     | `""`                |
-| `master.extraEnvVarsSecret`                          | Name of existing Secret containing extra env vars for master-elegible nodes                                                                        | `""`                |
-| `master.extraVolumes`                                | Optionally specify extra list of additional volumes for the master-elegible pod(s)                                                                 | `[]`                |
-| `master.extraVolumeMounts`                           | Optionally specify extra list of additional volumeMounts for the master-elegible container(s)                                                      | `[]`                |
-| `master.sidecars`                                    | Add additional sidecar containers to the master-elegible pod(s)                                                                                    | `[]`                |
-| `master.initContainers`                              | Add additional init containers to the master-elegible pod(s)                                                                                       | `[]`                |
+| `master.lifecycleHooks`                              | LifecycleHooks for the master-eligible container(s) to automate configuration before or after startup                                              | `{}`                |
+| `master.extraEnvVars`                                | Array with extra environment variables to add to master-eligible nodes                                                                             | `[]`                |
+| `master.extraEnvVarsCM`                              | Name of existing ConfigMap containing extra env vars for master-eligible nodes                                                                     | `""`                |
+| `master.extraEnvVarsSecret`                          | Name of existing Secret containing extra env vars for master-eligible nodes                                                                        | `""`                |
+| `master.extraVolumes`                                | Optionally specify extra list of additional volumes for the master-eligible pod(s)                                                                 | `[]`                |
+| `master.extraVolumeMounts`                           | Optionally specify extra list of additional volumeMounts for the master-eligible container(s)                                                      | `[]`                |
+| `master.sidecars`                                    | Add additional sidecar containers to the master-eligible pod(s)                                                                                    | `[]`                |
+| `master.initContainers`                              | Add additional init containers to the master-eligible pod(s)                                                                                       | `[]`                |
 | `master.persistence.enabled`                         | Enable persistence using a `PersistentVolumeClaim`                                                                                                 | `true`              |
 | `master.persistence.storageClass`                    | Persistent Volume Storage Class                                                                                                                    | `""`                |
 | `master.persistence.existingClaim`                   | Existing Persistent Volume Claim                                                                                                                   | `""`                |
@@ -269,7 +269,7 @@ helm delete --purge my-release
 | `data.fullnameOverride`                            | String to fully override elasticsearch.data.fullname                                                                                             | `""`                |
 | `data.servicenameOverride`                         | String to fully override elasticsearch.data.servicename                                                                                          | `""`                |
 | `data.annotations`                                 | Annotations for the data statefulset                                                                                                             | `{}`                |
-| `data.updateStrategy.type`                         | Data-only nodes statefulset stategy type                                                                                                         | `RollingUpdate`     |
+| `data.updateStrategy.type`                         | Data-only nodes statefulset strategy type                                                                                                        | `RollingUpdate`     |
 | `data.resources.limits`                            | The resources limits for the data containers                                                                                                     | `{}`                |
 | `data.resources.requests`                          | The requested resources for the data containers                                                                                                  | `{}`                |
 | `data.heapSize`                                    | Elasticsearch data node heap size.                                                                                                               | `1024m`             |
@@ -317,7 +317,7 @@ helm delete --purge my-release
 | `data.customReadinessProbe`                        | Override default readiness probe                                                                                                                 | `{}`                |
 | `data.command`                                     | Override default container command (useful when using custom images)                                                                             | `[]`                |
 | `data.args`                                        | Override default container args (useful when using custom images)                                                                                | `[]`                |
-| `data.lifecycleHooks`                              | for the data container(s) to automate configuration before or after startup                                                                      | `{}`                |
+| `data.lifecycleHooks`                              | LifecycleHooks for the data container(s) to automate configuration before or after startup                                                       | `{}`                |
 | `data.extraEnvVars`                                | Array with extra environment variables to add to data nodes                                                                                      | `[]`                |
 | `data.extraEnvVarsCM`                              | Name of existing ConfigMap containing extra env vars for data nodes                                                                              | `""`                |
 | `data.extraEnvVarsSecret`                          | Name of existing Secret containing extra env vars for data nodes                                                                                 | `""`                |
@@ -356,7 +356,7 @@ helm delete --purge my-release
 | `coordinating.fullnameOverride`                            | String to fully override elasticsearch.coordinating.fullname                                                              | `""`            |
 | `coordinating.servicenameOverride`                         | String to fully override elasticsearch.coordinating.servicename                                                           | `""`            |
 | `coordinating.annotations`                                 | Annotations for the coordinating-only statefulset                                                                         | `{}`            |
-| `coordinating.updateStrategy.type`                         | Coordinating-only nodes statefulset stategy type                                                                          | `RollingUpdate` |
+| `coordinating.updateStrategy.type`                         | Coordinating-only nodes statefulset strategy type                                                                         | `RollingUpdate` |
 | `coordinating.resources.limits`                            | The resources limits for the coordinating-only containers                                                                 | `{}`            |
 | `coordinating.resources.requests`                          | The requested resources for the coordinating-only containers                                                              | `{}`            |
 | `coordinating.heapSize`                                    | Elasticsearch coordinating node heap size.                                                                                | `128m`          |
@@ -404,7 +404,7 @@ helm delete --purge my-release
 | `coordinating.customReadinessProbe`                        | Override default readiness probe                                                                                          | `{}`            |
 | `coordinating.command`                                     | Override default container command (useful when using custom images)                                                      | `[]`            |
 | `coordinating.args`                                        | Override default container args (useful when using custom images)                                                         | `[]`            |
-| `coordinating.lifecycleHooks`                              | for the coordinating-only container(s) to automate configuration before or after startup                                  | `{}`            |
+| `coordinating.lifecycleHooks`                              | LifecycleHooks for the coordinating-only container(s) to automate configuration before or after startup                   | `{}`            |
 | `coordinating.extraEnvVars`                                | Array with extra environment variables to add to coordinating-only nodes                                                  | `[]`            |
 | `coordinating.extraEnvVarsCM`                              | Name of existing ConfigMap containing extra env vars for coordinating-only nodes                                          | `""`            |
 | `coordinating.extraEnvVarsSecret`                          | Name of existing Secret containing extra env vars for coordinating-only nodes                                             | `""`            |
@@ -438,7 +438,7 @@ helm delete --purge my-release
 | `ingest.annotations`                                 | Annotations for the ingest statefulset                                                                                           | `{}`                         |
 | `ingest.containerPorts.restAPI`                      | Elasticsearch REST API port                                                                                                      | `9200`                       |
 | `ingest.containerPorts.transport`                    | Elasticsearch Transport port                                                                                                     | `9300`                       |
-| `ingest.updateStrategy.type`                         | Ingest-only nodes statefulset stategy type                                                                                       | `RollingUpdate`              |
+| `ingest.updateStrategy.type`                         | Ingest-only nodes statefulset strategy type                                                                                      | `RollingUpdate`              |
 | `ingest.resources.limits`                            | The resources limits for the ingest-only containers                                                                              | `{}`                         |
 | `ingest.resources.requests`                          | The requested resources for the ingest-only containers                                                                           | `{}`                         |
 | `ingest.heapSize`                                    | Elasticsearch ingest-only node heap size.                                                                                        | `128m`                       |
@@ -486,7 +486,7 @@ helm delete --purge my-release
 | `ingest.customReadinessProbe`                        | Override default readiness probe                                                                                                 | `{}`                         |
 | `ingest.command`                                     | Override default container command (useful when using custom images)                                                             | `[]`                         |
 | `ingest.args`                                        | Override default container args (useful when using custom images)                                                                | `[]`                         |
-| `ingest.lifecycleHooks`                              | for the ingest-only container(s) to automate configuration before or after startup                                               | `{}`                         |
+| `ingest.lifecycleHooks`                              | LifecycleHooks for the ingest-only container(s) to automate configuration before or after startup                                | `{}`                         |
 | `ingest.extraEnvVars`                                | Array with extra environment variables to add to ingest-only nodes                                                               | `[]`                         |
 | `ingest.extraEnvVarsCM`                              | Name of existing ConfigMap containing extra env vars for ingest-only nodes                                                       | `""`                         |
 | `ingest.extraEnvVarsSecret`                          | Name of existing Secret containing extra env vars for ingest-only nodes                                                          | `""`                         |
@@ -792,7 +792,7 @@ initScriptsSecret=special-scripts-sensitive
 
 As it's described in the [official documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshots-register-repository.html#snapshots-filesystem-repository), it's necessary to register a snapshot repository before you can perform snapshot and restore operations.
 
-This chart allows you to configure Elasticsearch to use a shared file system to store snapshots. To do so, you need to mount a RWX volume on every Elasticsearch node, and set the parameter `snapshotRepoPath` with the path where the volume is mounted. In the example below, you can find the values to set when using a NFS Perstitent Volume:
+This chart allows you to configure Elasticsearch to use a shared file system to store snapshots. To do so, you need to mount a RWX volume on every Elasticsearch node, and set the parameter `snapshotRepoPath` with the path where the volume is mounted. In the example below, you can find the values to set when using a NFS Persistent Volume:
 
 ```yaml
 extraVolumes:
@@ -888,8 +888,8 @@ The following values have been modified:
 - `master.service.*` has been removed.
 - `data.service.*` has been removed.
 - `master.ingress.*` has been renamed as `ingress.*`. This ingress will be backed by the coordinating/master service previously mentioned.
-- In addition, an Ingest-only service and ingress have been added, for use cases where separated ingrestion and search channels are needed.
-- `global.coordinating.name` have been renamed as `global.elasticsaerch.service.name`.
+- In addition, an Ingest-only service and ingress have been added, for use cases where separate ingest and search channels are needed.
+- `global.coordinating.name` have been renamed as `global.elasticsearch.service.name`.
 - `name` has been renamed as `clusterName`.
 - `extraEnvVarsConfigMap` has been renamed as `extraEnvVarsCM`.
 - `{master/data/ingest/coordinating}.replicas` has been renamed as `{master/data/ingest/coordinating}.replicaCount`.
@@ -900,7 +900,7 @@ The following values have been modified:
 
 ### To 17.0.0
 
-This version bumps in a major the version of the Kibana Helm Chart bundled as dependecy, [here](https://github.com/bitnami/charts/tree/main/bitnami/kibana#to-900) you can see the changes implemented in this Kibana major version.
+This version bumps in a major the version of the Kibana Helm Chart bundled as dependency, [here](https://github.com/bitnami/charts/tree/main/bitnami/kibana#to-900) you can see the changes implemented in this Kibana major version.
 
 ### To 16.0.0
 

@@ -185,7 +185,7 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- end -}}
 
 {{/*
-Returns true if at least one master-elegible node replica has been configured.
+Returns true if at least one master-eligible node replica has been configured.
 */}}
 {{- define "elasticsearch.master.enabled" -}}
 {{- if or .Values.master.autoscaling.enabled (gt (int .Values.master.replicaCount) 0) -}}
@@ -564,7 +564,7 @@ elasticsearch: security.tls
 {{- define "elasticsearch.validateValues.master.replicas" -}}
 {{- if not (include "elasticsearch.master.enabled" .) -}}
 elasticsearch: master.replicas
-    Elasticsearch needs at least one master-elegible node to form a cluster.
+    Elasticsearch needs at least one master-eligible node to form a cluster.
 {{- end -}}
 {{- end -}}
 
