@@ -188,8 +188,8 @@ ldap:
   extraConfiguration: ""
   ## @param ldap.tls.enabled Enabled TLS configuration.
   ## @param ldap.tls.startTls Use STARTTLS instead of LDAPS.
-  ## @param ldap.tls.skipVerify Skip any SSL verification (hostanames or certificates)
-  ## @param ldap.tls.certificatesMountPath Where LDAP certifcates are mounted.
+  ## @param ldap.tls.skipVerify Skip any SSL verification (hostnames or certificates)
+  ## @param ldap.tls.certificatesMountPath Where LDAP certificates are mounted.
   ## @param ldap.tls.certificatesSecret Secret with LDAP certificates.
   ## @param ldap.tls.CAFilename  CA certificate filename. Should match with the CA entry key in the ldap.tls.certificatesSecret.
   ## @param ldap.tls.certFilename Client certificate filename to authenticate against the LDAP server. Should match with certificate the entry key in the ldap.tls.certificatesSecret.
@@ -227,7 +227,7 @@ config:
   useGrafanaIniFile: false
   grafanaIniConfigMap: ""
   grafanaIniSecret: ""
-## Create dasboard provider to load dashboards, a default one is created to load dashboards
+## Create dashboard provider to load dashboards, a default one is created to load dashboards
 ## from "/opt/bitnami/grafana/dashboards"
 ## @param dashboardsProvider.enabled Enable the use of a Grafana dashboard provider
 ## @param dashboardsProvider.configMapName Name of a ConfigMap containing a custom dashboard provider
@@ -313,7 +313,7 @@ grafana:
   ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
   ##
   schedulerName: ""
-  ## @param grafana.terminationGracePeriodSeconds In seconds, time the given to the Grafana pod needs to terminate gracefully
+  ## @param grafana.terminationGracePeriodSeconds In seconds, time given to the Grafana pod to terminate gracefully
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod/#termination-of-pods
   ##
   terminationGracePeriodSeconds: ""
@@ -507,7 +507,7 @@ grafana:
   ## @param grafana.customStartupProbe Custom startupProbe that overrides the default one
   ##
   customStartupProbe: {}
-  ## @param grafana.lifecycleHooks for the Grafana container(s) to automate configuration before or after startup
+  ## @param grafana.lifecycleHooks LifecycleHooks for the Grafana container(s) to automate configuration before or after startup
   ##
   lifecycleHooks: {}
   ## @param grafana.sidecars Attach additional sidecar containers to the Grafana pod

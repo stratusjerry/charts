@@ -134,7 +134,7 @@ The operator will extend the Kubernetes API with the following objects: *Grafana
 
 ```
 
-This solution allows to easily deploy multiple Grafana instances compared to the *bitnami/grafana* chart. As the operator automatically deploys Grafana installations, the Grafana Operator pods will require a ServiceAccount with privileges to create and destroy mulitple Kubernetes objects. This may be problematic for Kubernetes clusters with strict role-based access policies.
+This solution allows to easily deploy multiple Grafana instances compared to the *bitnami/grafana* chart. As the operator automatically deploys Grafana installations, the Grafana Operator pods will require a ServiceAccount with privileges to create and destroy multiple Kubernetes objects. This may be problematic for Kubernetes clusters with strict role-based access policies.
 
 ## Parameters
 
@@ -196,8 +196,8 @@ This solution allows to easily deploy multiple Grafana instances compared to the
 | `ldap.extraConfiguration`          | Extra ldap configuration.                                                                                                                            | `""`                              |
 | `ldap.tls.enabled`                 | Enabled TLS configuration.                                                                                                                           | `false`                           |
 | `ldap.tls.startTls`                | Use STARTTLS instead of LDAPS.                                                                                                                       | `false`                           |
-| `ldap.tls.skipVerify`              | Skip any SSL verification (hostanames or certificates)                                                                                               | `false`                           |
-| `ldap.tls.certificatesMountPath`   | Where LDAP certifcates are mounted.                                                                                                                  | `/opt/bitnami/grafana/conf/ldap/` |
+| `ldap.tls.skipVerify`              | Skip any SSL verification (hostnames or certificates)                                                                                                | `false`                           |
+| `ldap.tls.certificatesMountPath`   | Where LDAP certificates are mounted.                                                                                                                 | `/opt/bitnami/grafana/conf/ldap/` |
 | `ldap.tls.certificatesSecret`      | Secret with LDAP certificates.                                                                                                                       | `""`                              |
 | `ldap.tls.CAFilename`              | CA certificate filename. Should match with the CA entry key in the ldap.tls.certificatesSecret.                                                      | `""`                              |
 | `ldap.tls.certFilename`            | Client certificate filename to authenticate against the LDAP server. Should match with certificate the entry key in the ldap.tls.certificatesSecret. | `""`                              |
@@ -225,7 +225,7 @@ This solution allows to easily deploy multiple Grafana instances compared to the
 | `grafana.automountServiceAccountToken`                      | Mount Service Account token in pod                                                                      | `false`          |
 | `grafana.hostAliases`                                       | Add deployment host aliases                                                                             | `[]`             |
 | `grafana.schedulerName`                                     | Alternative scheduler                                                                                   | `""`             |
-| `grafana.terminationGracePeriodSeconds`                     | In seconds, time the given to the Grafana pod needs to terminate gracefully                             | `""`             |
+| `grafana.terminationGracePeriodSeconds`                     | In seconds, time given to the Grafana pod to terminate gracefully                                       | `""`             |
 | `grafana.priorityClassName`                                 | Priority class name                                                                                     | `""`             |
 | `grafana.podLabels`                                         | Extra labels for Grafana pods                                                                           | `{}`             |
 | `grafana.podAnnotations`                                    | Grafana Pod annotations                                                                                 | `{}`             |
@@ -283,7 +283,7 @@ This solution allows to easily deploy multiple Grafana instances compared to the
 | `grafana.customLivenessProbe`                               | Custom livenessProbe that overrides the default one                                                     | `{}`             |
 | `grafana.customReadinessProbe`                              | Custom readinessProbe that overrides the default one                                                    | `{}`             |
 | `grafana.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                      | `{}`             |
-| `grafana.lifecycleHooks`                                    | for the Grafana container(s) to automate configuration before or after startup                          | `{}`             |
+| `grafana.lifecycleHooks`                                    | LifecycleHooks for the Grafana container(s) to automate configuration before or after startup           | `{}`             |
 | `grafana.sidecars`                                          | Attach additional sidecar containers to the Grafana pod                                                 | `[]`             |
 | `grafana.initContainers`                                    | Add additional init containers to the Grafana pod(s)                                                    | `[]`             |
 | `grafana.extraVolumes`                                      | Additional volumes for the Grafana pod                                                                  | `[]`             |
