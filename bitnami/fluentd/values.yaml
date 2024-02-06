@@ -443,13 +443,13 @@ forwarder:
     timeoutSeconds: 5
     failureThreshold: 6
     successThreshold: 1
-  ## @param forwarder.customStartupProbe Custom liveness probe for the Fluend Forwarder
+  ## @param forwarder.customStartupProbe Custom liveness probe for the Fluentd Forwarder
   ##
   customStartupProbe: {}
-  ## @param forwarder.customLivenessProbe Custom liveness probe for the Fluend Forwarder
+  ## @param forwarder.customLivenessProbe Custom liveness probe for the Fluentd Forwarder
   ##
   customLivenessProbe: {}
-  ## @param forwarder.customReadinessProbe Custom rediness probe for the Fluend Forwarder
+  ## @param forwarder.customReadinessProbe Custom readiness probe for the Fluentd Forwarder
   ##
   customReadinessProbe: {}
 
@@ -1060,7 +1060,7 @@ aggregator:
   ## @param aggregator.customLivenessProbe Custom liveness probe for the Fluentd Aggregator
   ##
   customLivenessProbe: {}
-  ## @param aggregator.customReadinessProbe Custom rediness probe for the Fluentd Aggregator
+  ## @param aggregator.customReadinessProbe Custom readiness probe for the Fluentd Aggregator
   ##
   customReadinessProbe: {}
 
@@ -1395,7 +1395,7 @@ metrics:
     ## @param metrics.serviceMonitor.honorLabels honorLabels chooses the metric's labels on collisions with target labels
     ##
     honorLabels: false
-    ## @param metrics.serviceMonitor.path path defines the path that promethues will use to pull metrics from the container
+    ## @param metrics.serviceMonitor.path path defines the path that prometheus will use to pull metrics from the container
     ##
     path: "/metrics"
 ## Enable internal SSL/TLS encryption
