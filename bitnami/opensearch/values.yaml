@@ -1024,7 +1024,7 @@ master:
     ## @param master.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param master.metrics.rules.selector Selector for the PrometheusRule object
     ## @param master.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param master.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param master.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
@@ -1562,7 +1562,7 @@ data:
     ## @param data.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param data.metrics.rules.selector Selector for the PrometheusRule object
     ## @param data.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param data.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param data.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
@@ -1615,7 +1615,7 @@ coordinating:
   ## ref: https://kubernetes.io/docs/tasks/run-application/configure-pdb
   ## @param coordinating.pdb.create Enable/disable a Pod Disruption Budget creation
   ## @param coordinating.pdb.minAvailable Minimum number/percentage of pods that should remain scheduled
-  ## @param coordinating.pdb.maxUnavailable Maximum number/percentage of pods that may be made unavailable. Defaults to `1` if both `coordinating.pdb.minAvailable` and `coodinating.pdb.maxUnavailable` are empty.
+  ## @param coordinating.pdb.maxUnavailable Maximum number/percentage of pods that may be made unavailable. Defaults to `1` if both `coordinating.pdb.minAvailable` and `coordinating.pdb.maxUnavailable` are empty.
   ##
   pdb:
     create: true
@@ -2062,7 +2062,7 @@ coordinating:
     ## @param coordinating.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param coordinating.metrics.rules.selector Selector for the PrometheusRule object
     ## @param coordinating.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param coordinating.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param coordinating.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
@@ -2727,7 +2727,7 @@ ingest:
     ## @param ingest.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param ingest.metrics.rules.selector Selector for the PrometheusRule object
     ## @param ingest.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param ingest.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param ingest.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
