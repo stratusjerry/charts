@@ -458,7 +458,7 @@ controller:
     ## @param controller.metrics.rules.spec Rules to render into the PrometheusRule object
     ## @param controller.metrics.rules.selector Selector for the PrometheusRule object
     ## @param controller.metrics.rules.namespace Namespace where to create the PrometheusRule object
-    ## @param controller.metrics.rules.additionalLabels Additional lables to add to the PrometheusRule object
+    ## @param controller.metrics.rules.additionalLabels Additional labels to add to the PrometheusRule object
     ##
     rules:
       enabled: false
@@ -3952,7 +3952,7 @@ config:
     ##
     argocdServerAdminPasswordMtime: ""
     ## Create a secret with optional repository credentials
-    ## @param config.secret.repositoryCredentials Repository credentials to add to the Argo CD server confgi secret
+    ## @param config.secret.repositoryCredentials Repository credentials to add to the Argo CD server config secret
     ## E.g.
     ## repositoryCredentials:
     ##   sample-ssh-key: |
@@ -4100,7 +4100,7 @@ redis:
   ## Use password authentication
   ## @param redis.auth.enabled Enable Redis dependency authentication
   ## @param redis.auth.existingSecret Existing secret to load redis dependency password
-  ## @param redis.auth.existingSecretPasswordKey Pasword key name inside the existing secret
+  ## @param redis.auth.existingSecretPasswordKey Password key name inside the existing secret
   ##
   auth:
     enabled: true
