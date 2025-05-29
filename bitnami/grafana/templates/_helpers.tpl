@@ -204,7 +204,7 @@ grafana: ldap.enabled ldap.uri ldap.basedn ldap.configuration ldap.configMapName
         You must provide the uri and basedn of your LDAP Sever (--set ldap.uri="aaa" --set ldap.basedn="bbb")
         or the  content of your custom ldap.toml file when enabling LDAP (--set ldap.configuration="xxx")
         As an alternative, you can set the name of an existing ConfigMap (--set ldap.configMapName="yyy") or
-        an an existing Secret (--set ldap.secretName="zzz") containging the custom ldap.toml file.
+        an an existing Secret (--set ldap.secretName="zzz") containing the custom ldap.toml file.
 {{- end -}}
 {{- end -}}
 
